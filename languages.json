@@ -6,7 +6,8 @@
       "print": "🖨️ Print Cards",
       "reset": "🔄 Reset Hunt",
       "setup": "📋 Setup Guide",
-      "dualLanguage": "🌍 Dual Language"
+      "dualLanguage": "🌍 Dual Language",
+      "cardType": "🎯 Card Type"
     },
     "categories": {
       "all": "All Locations",
@@ -232,7 +233,169 @@
         "location": "living_room",
         "category": "indoor"
       }
-    ]
+    ],
+    "tasks": [
+      {
+        "id": 1,
+        "emoji": "🕷️",
+        "task": "Do a spooky spider walk across the room (walk on hands and feet with belly up)",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 2,
+        "emoji": "🧟",
+        "task": "Walk like a zombie for 2 minutes - slow, stiff movements with arms out",
+        "points": 10,
+        "category": "outdoor"
+      },
+      {
+        "id": 3,
+        "emoji": "🎃",
+        "task": "Carve or draw a spooky face on a pumpkin",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 4,
+        "emoji": "👻",
+        "task": "Tell everyone a spooky ghost story (at least 1 minute long)",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 5,
+        "emoji": "🦇",
+        "task": "Hang upside down like a bat for 20 seconds (from monkey bars or safe spot)",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 6,
+        "emoji": "🧙",
+        "task": "Create a magic potion using 5 safe ingredients from the kitchen",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 7,
+        "emoji": "🕸️",
+        "task": "Create a spider web using string or yarn (at least 50cm wide)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 8,
+        "emoji": "🌕",
+        "task": "Howl at the moon like a werewolf 5 times",
+        "points": 5,
+        "category": "outdoor"
+      },
+      {
+        "id": 9,
+        "emoji": "🍂",
+        "task": "Collect 20 fallen leaves and arrange them by size",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 10,
+        "emoji": "🦴",
+        "task": "Do the skeleton dance - make your body shake like bones rattling for 1 minute",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 11,
+        "emoji": "🧛",
+        "task": "Count backwards from 100 in your spookiest vampire voice",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 12,
+        "emoji": "🐈‍⬛",
+        "task": "Act like a black cat - stretch, meow, and prowl around for 2 minutes",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 13,
+        "emoji": "🎭",
+        "task": "Put on a spooky costume using things you find around the house",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 14,
+        "emoji": "🌙",
+        "task": "Find 5 things outside that are the same color as the night sky",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 15,
+        "emoji": "🍁",
+        "task": "Jump into a pile of leaves (or make a pile first!)",
+        "points": 10,
+        "category": "garden"
+      },
+      {
+        "id": 16,
+        "emoji": "🔮",
+        "task": "Predict the future - tell 3 silly fortunes to family members",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 17,
+        "emoji": "🪦",
+        "task": "Create a silly epitaph (gravestone saying) for an imaginary character",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 18,
+        "emoji": "🌾",
+        "task": "Collect 10 different types of natural items from the garden",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 19,
+        "emoji": "🏚️",
+        "task": "Build a haunted house using pillows, blankets, and furniture",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 20,
+        "emoji": "⚡",
+        "task": "Do 10 jumping jacks every time someone says 'Halloween'",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 21,
+        "emoji": "🍄",
+        "task": "Search for mushrooms or interesting fungi in the garden (look, don't touch!)",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 22,
+        "emoji": "🌟",
+        "task": "Create a spooky shadow puppet show on the wall (needs flashlight)",
+        "points": 20,
+        "category": "indoor"
+      }
+    ],
+    "cardTypes": {
+      "quiz": "❓ Quiz Cards (Riddles)",
+      "task": "✅ Task Cards (Challenges)"
+    },
+    "cardTypeLabel": "Card Type:",
+    "taskPoints": "Points:"
   },
   "sk": {
     "title": "🎃 Halloweenske Kartičky na Pokladnicu 🎃",
@@ -467,7 +630,169 @@
       "garden": "🌻 Záhrada"
     },
     "dualLanguageLabel": "Druhý Jazyk (Voliteľné):",
-    "categoryLabel": "Filtrovať podľa Lokality:"
+    "categoryLabel": "Filtrovať podľa Lokality:",
+    "tasks": [
+      {
+        "id": 1,
+        "emoji": "🕷️",
+        "task": "Urob desivú pavúčiu chôdzu cez izbu (chôdza na rukách a nohách bruchom hore)",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 2,
+        "emoji": "🧟",
+        "task": "Choď ako zombie 2 minúty - pomalé, stuhnuté pohyby s rukami von",
+        "points": 10,
+        "category": "outdoor"
+      },
+      {
+        "id": 3,
+        "emoji": "🎃",
+        "task": "Vyrezaj alebo nakresli desivú tvár na tekvicu",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 4,
+        "emoji": "👻",
+        "task": "Rozprávaj všetkým desivý príbeh o duchovi (aspoň 1 minútu)",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 5,
+        "emoji": "🦇",
+        "task": "Vis hlavou dolu ako netopier 20 sekúnd (z hrazdy alebo bezpečného miesta)",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 6,
+        "emoji": "🧙",
+        "task": "Vytvor čarovný lektvar z 5 bezpečných ingrediencií z kuchyne",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 7,
+        "emoji": "🕸️",
+        "task": "Vytvor pavučinu pomocou špagátu alebo priadze (aspoň 50 cm širokú)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 8,
+        "emoji": "🌕",
+        "task": "Vyl na mesiac ako vlkodlak 5-krát",
+        "points": 5,
+        "category": "outdoor"
+      },
+      {
+        "id": 9,
+        "emoji": "🍂",
+        "task": "Zbieraj 20 spadnutých listov a usporiadaj ich podľa veľkosti",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 10,
+        "emoji": "🦴",
+        "task": "Zatancuj kostrový tanec - tras telom ako chrastiacimi kosťami 1 minútu",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 11,
+        "emoji": "🧛",
+        "task": "Počítaj pozpätku od 100 svojím najdesivejším upírím hlasom",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 12,
+        "emoji": "🐈‍⬛",
+        "task": "Hraj čiernu mačku - naťahuj sa, mňaukaj a plíž sa 2 minúty",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 13,
+        "emoji": "🎭",
+        "task": "Obliekni si desivý kostým z vecí, ktoré nájdeš doma",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 14,
+        "emoji": "🌙",
+        "task": "Nájdi vonku 5 vecí rovnakej farby ako nočná obloha",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 15,
+        "emoji": "🍁",
+        "task": "Skoč do kopy listov (alebo najprv kopu urob!)",
+        "points": 10,
+        "category": "garden"
+      },
+      {
+        "id": 16,
+        "emoji": "🔮",
+        "task": "Predpovedaj budúcnosť - povedz 3 vtipné veštby členom rodiny",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 17,
+        "emoji": "🪦",
+        "task": "Vytvor vtipný náhrobný nápis pre vymyslenú postavu",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 18,
+        "emoji": "🌾",
+        "task": "Zbieraj 10 rôznych druhov prírodných predmetov zo záhrady",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 19,
+        "emoji": "🏚️",
+        "task": "Postav strašidelný dom z vankúšov, diek a nábytku",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 20,
+        "emoji": "⚡",
+        "task": "Urob 10 skokov po každom zmienení slova 'Halloween'",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 21,
+        "emoji": "🍄",
+        "task": "Hľadaj huby alebo zaujímavé huby v záhrade (pozeraj, ale nesiahaj!)",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 22,
+        "emoji": "🌟",
+        "task": "Vytvor strašidelné tieňové bábkové divadlo na stene (potrebuješ baterku)",
+        "points": 20,
+        "category": "indoor"
+      }
+    ],
+    "cardTypes": {
+      "quiz": "❓ Kvízové Karty (Hádanky)",
+      "task": "✅ Úlohové Karty (Výzvy)"
+    },
+    "cardTypeLabel": "Typ Karty:",
+    "taskPoints": "Body:"
   },
   "cs": {
     "title": "🎃 Halloweenské Kartičky na Poklad 🎃",
@@ -702,7 +1027,169 @@
       "garden": "🌻 Zahrada"
     },
     "dualLanguageLabel": "Druhý Jazyk (Volitelné):",
-    "categoryLabel": "Filtrovat podle Lokality:"
+    "categoryLabel": "Filtrovat podle Lokality:",
+    "tasks": [
+      {
+        "id": 1,
+        "emoji": "🕷️",
+        "task": "Udělej děsivou pavučí chůzi přes pokoj (chůze na rukou a nohách břichem nahoru)",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 2,
+        "emoji": "🧟",
+        "task": "Choď jako zombie 2 minuty - pomalé, ztuhlé pohyby s rukama venku",
+        "points": 10,
+        "category": "outdoor"
+      },
+      {
+        "id": 3,
+        "emoji": "🎃",
+        "task": "Vyřezej nebo nakresli strašidelnou tvář na dýni",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 4,
+        "emoji": "👻",
+        "task": "Vyprávěj všem strašidelný příběh o duchu (alespoň 1 minutu)",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 5,
+        "emoji": "🦇",
+        "task": "Vis hlavou dolů jako netopýr 20 sekund (z hrazdy nebo bezpečného místa)",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 6,
+        "emoji": "🧙",
+        "task": "Vytvoř kouzelný lektvar z 5 bezpečných ingrediencí z kuchyně",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 7,
+        "emoji": "🕸️",
+        "task": "Vytvoř pavučinu pomocí provázku nebo příze (alespoň 50 cm širokou)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 8,
+        "emoji": "🌕",
+        "task": "Vyj na měsíc jako vlkodlak 5krát",
+        "points": 5,
+        "category": "outdoor"
+      },
+      {
+        "id": 9,
+        "emoji": "🍂",
+        "task": "Sesbírej 20 spadlých listů a srovnej je podle velikosti",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 10,
+        "emoji": "🦴",
+        "task": "Zatanči kostrový tanec - třes tělem jako chrastící kostmi 1 minutu",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 11,
+        "emoji": "🧛",
+        "task": "Počítej pozpátku od 100 svým nejděsivějším upířím hlasem",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 12,
+        "emoji": "🐈‍⬛",
+        "task": "Hraj černou kočku - protahuj se, mňoukej a plížej se 2 minuty",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 13,
+        "emoji": "🎭",
+        "task": "Oblékni si strašidelný kostým z věcí, které najdeš doma",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 14,
+        "emoji": "🌙",
+        "task": "Najdi venku 5 věcí stejné barvy jako noční obloha",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 15,
+        "emoji": "🍁",
+        "task": "Skoč do hromady listí (nebo nejprve hromadu udělej!)",
+        "points": 10,
+        "category": "garden"
+      },
+      {
+        "id": 16,
+        "emoji": "🔮",
+        "task": "Předpověz budoucnost - řekni 3 legrační věštby členům rodiny",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 17,
+        "emoji": "🪦",
+        "task": "Vytvoř vtipný náhrobní nápis pro vymyšlenou postavu",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 18,
+        "emoji": "🌾",
+        "task": "Sesbírej 10 různých druhů přírodních předmětů ze zahrady",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 19,
+        "emoji": "🏚️",
+        "task": "Postav strašidelný dům z polštářů, dek a nábytku",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 20,
+        "emoji": "⚡",
+        "task": "Udělej 10 skoků po každém zmínění slova 'Halloween'",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 21,
+        "emoji": "🍄",
+        "task": "Hledej houby nebo zajímavé houby v zahradě (koukej, ale nesahej!)",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 22,
+        "emoji": "🌟",
+        "task": "Vytvoř strašidelné stínové loutkové divadlo na stěně (potřebuješ baterku)",
+        "points": 20,
+        "category": "indoor"
+      }
+    ],
+    "cardTypes": {
+      "quiz": "❓ Kvízové Karty (Hádanky)",
+      "task": "✅ Úkolové Karty (Výzvy)"
+    },
+    "cardTypeLabel": "Typ Karty:",
+    "taskPoints": "Body:"
   },
   "da": {
     "title": "🎃 Halloween Skattejagt Kort 🎃",
@@ -937,7 +1424,169 @@
       "garden": "🌻 Have"
     },
     "dualLanguageLabel": "Andet Sprog (Valgfrit):",
-    "categoryLabel": "Filtrer efter Sted:"
+    "categoryLabel": "Filtrer efter Sted:",
+    "tasks": [
+      {
+        "id": 1,
+        "emoji": "🕷️",
+        "task": "Gør en uhyggelig edderkoppegang over rummet (gå på hænder og fødder med maven opad)",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 2,
+        "emoji": "🧟",
+        "task": "Gå som en zombie i 2 minutter - langsomme, stive bevægelser med armene ud",
+        "points": 10,
+        "category": "outdoor"
+      },
+      {
+        "id": 3,
+        "emoji": "🎃",
+        "task": "Udskær eller tegn et uhyggeligt ansigt på et græskar",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 4,
+        "emoji": "👻",
+        "task": "Fortæl alle en uhyggelig spøgelseshistorie (mindst 1 minut lang)",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 5,
+        "emoji": "🦇",
+        "task": "Hæng på hovedet som en flagermus i 20 sekunder (fra klatrestativ eller sikkert sted)",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 6,
+        "emoji": "🧙",
+        "task": "Lav en magisk trylledrik ved hjælp af 5 sikre ingredienser fra køkkenet",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 7,
+        "emoji": "🕸️",
+        "task": "Lav et spindelvæv ved hjælp af snor eller garn (mindst 50 cm bredt)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 8,
+        "emoji": "🌕",
+        "task": "Hyl til månen som en varulv 5 gange",
+        "points": 5,
+        "category": "outdoor"
+      },
+      {
+        "id": 9,
+        "emoji": "🍂",
+        "task": "Saml 20 faldne blade og arranger dem efter størrelse",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 10,
+        "emoji": "🦴",
+        "task": "Dans skeletdansen - ryst din krop som raslende knogler i 1 minut",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 11,
+        "emoji": "🧛",
+        "task": "Tæl baglæns fra 100 med din uhyggeligste vampyrstemme",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 12,
+        "emoji": "🐈‍⬛",
+        "task": "Opfør dig som en sort kat - stræk dig, mjav og lur rundt i 2 minutter",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 13,
+        "emoji": "🎭",
+        "task": "Tag et uhyggeligt kostume på ved hjælp af ting, du finder rundt i huset",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 14,
+        "emoji": "🌙",
+        "task": "Find 5 ting udenfor, der har samme farve som nattehimlen",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 15,
+        "emoji": "🍁",
+        "task": "Hop i en bunke blade (eller lav en bunke først!)",
+        "points": 10,
+        "category": "garden"
+      },
+      {
+        "id": 16,
+        "emoji": "🔮",
+        "task": "Forudsig fremtiden - fortæl 3 sjove spådomme til familiemedlemmer",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 17,
+        "emoji": "🪦",
+        "task": "Lav en sjov gravskrift til en imaginær karakter",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 18,
+        "emoji": "🌾",
+        "task": "Saml 10 forskellige typer naturlige genstande fra haven",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 19,
+        "emoji": "🏚️",
+        "task": "Byg et spøgelseshus ved hjælp af puder, tæpper og møbler",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 20,
+        "emoji": "⚡",
+        "task": "Lav 10 jumping jacks hver gang nogen siger 'Halloween'",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 21,
+        "emoji": "🍄",
+        "task": "Søg efter svampe eller interessante svampe i haven (se, men rør ikke!)",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 22,
+        "emoji": "🌟",
+        "task": "Lav et uhyggeligt skyggespil på væggen (skal bruge lommelygte)",
+        "points": 20,
+        "category": "indoor"
+      }
+    ],
+    "cardTypes": {
+      "quiz": "❓ Quiz Kort (Gåder)",
+      "task": "✅ Opgave Kort (Udfordringer)"
+    },
+    "cardTypeLabel": "Kort Type:",
+    "taskPoints": "Point:"
   },
   "fo": {
     "title": "🎃 Halloween Skattaleitingarkort 🎃",
@@ -1172,6 +1821,168 @@
       "garden": "🌻 Garður"
     },
     "dualLanguageLabel": "Annað Mál (Valkvætt):",
-    "categoryLabel": "Filtrera eftir Staði:"
+    "categoryLabel": "Filtrera eftir Staði:",
+    "tasks": [
+      {
+        "id": 1,
+        "emoji": "🕷️",
+        "task": "Ger ein ræðiliga eiturkoppa-gongd yvir stovuna (ganga á hondum og fótum við maganum upp)",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 2,
+        "emoji": "🧟",
+        "task": "Gakk sum ein uppvakningur í 2 minuttir - seinar, stívir rørsluir við armunum út",
+        "points": 10,
+        "category": "outdoor"
+      },
+      {
+        "id": 3,
+        "emoji": "🎃",
+        "task": "Skera ella teikna eitt ræðilegt andlit á eina grágrýtisgrýslu",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 4,
+        "emoji": "👻",
+        "task": "Siga øllum eina ræðiliga dreymasøgu (í minsta lagi 1 minutt long)",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 5,
+        "emoji": "🦇",
+        "task": "Hanga á høvdinum sum ein flogmús í 20 sekund (frá klatristellum ella trygdum stað)",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 6,
+        "emoji": "🧙",
+        "task": "Skap ein gandadrykkur við 5 trygdum innihaldsevnum úr køkinum",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 7,
+        "emoji": "🕸️",
+        "task": "Skap eitt eiturkoppanót við tráð ella garn (í minsta lagi 50 cm breitt)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 8,
+        "emoji": "🌕",
+        "task": "Hýl til mánnan sum ein varúlvur 5 ferðir",
+        "points": 5,
+        "category": "outdoor"
+      },
+      {
+        "id": 9,
+        "emoji": "🍂",
+        "task": "Sanka 20 fallin lev og set tey eftir stødd",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 10,
+        "emoji": "🦴",
+        "task": "Dansa beinagrindar-dansin - skakka kropp sum raslandi bein í 1 minutt",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 11,
+        "emoji": "🧛",
+        "task": "Tel afturímóti frá 100 við tíni ræðiligastu vampýrródd",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 12,
+        "emoji": "🐈‍⬛",
+        "task": "Spæl svarta ketta - tønja teg, mjálva og smoyga í 2 minuttir",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 13,
+        "emoji": "🎭",
+        "task": "Tak eitt ræðiligt búni á við lutum, sum tú finnur umhvørvis í húsinum",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 14,
+        "emoji": "🌙",
+        "task": "Finn 5 lutir úti, sum hava sama litina sum náttarhimin",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 15,
+        "emoji": "🍁",
+        "task": "Hoppa í eina løvabúnka (ella ger eina búnka fyrst!)",
+        "points": 10,
+        "category": "garden"
+      },
+      {
+        "id": 16,
+        "emoji": "🔮",
+        "task": "Spá framtíðina - siga 3 stuttlig spádómar til familumeðlimum",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 17,
+        "emoji": "🪦",
+        "task": "Skap ein stuttligan grafstein-tekst til eina uppdiktaða persón",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 18,
+        "emoji": "🌾",
+        "task": "Sanka 10 ymisk sløg av náttúrligum lutum úr garðinum",
+        "points": 20,
+        "category": "garden"
+      },
+      {
+        "id": 19,
+        "emoji": "🏚️",
+        "task": "Bygg eitt uppvaknings-hús við koddum, teppum og húsabúnaði",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 20,
+        "emoji": "⚡",
+        "task": "Ger 10 hoppatak hvørja ferð onkur sigur 'Halloween'",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 21,
+        "emoji": "🍄",
+        "task": "Leita eftir soppur ella áhugaverdum soppur í garðinum (hygg, men tak ikki!)",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 22,
+        "emoji": "🌟",
+        "task": "Skap eitt ræðiligt skuggabrúðuleikhús á vegginum (skal hava lummu)",
+        "points": 20,
+        "category": "indoor"
+      }
+    ],
+    "cardTypes": {
+      "quiz": "❓ Spurningakort (Gátur)",
+      "task": "✅ Uppgávukort (Avbjóðingar)"
+    },
+    "cardTypeLabel": "Korta Slag:",
+    "taskPoints": "Stig:"
   }
 }

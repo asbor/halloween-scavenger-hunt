@@ -8,6 +8,7 @@ class ScavengerHunt {
         this.currentLanguage = 'en';
         this.secondLanguage = '';
         this.currentCategory = 'all';
+        this.currentCardType = 'quiz'; // 'quiz' or 'task'
         this.translations = {};
         this.init();
     }
@@ -227,6 +228,7 @@ class ScavengerHunt {
         document.getElementById('languageSelect').addEventListener('change', (e) => this.setLanguage(e.target.value));
         document.getElementById('secondLanguageSelect').addEventListener('change', (e) => this.setSecondLanguage(e.target.value));
         document.getElementById('categoryFilter').addEventListener('change', (e) => this.setCategory(e.target.value));
+        document.getElementById('cardTypeSelect').addEventListener('change', (e) => this.setCardType(e.target.value));
         
         // Close setup guide when clicking outside
         document.getElementById('setupGuide').addEventListener('click', (e) => {
@@ -256,6 +258,7 @@ class ScavengerHunt {
         // Update labels
         document.getElementById('secondLanguageLabel').textContent = t.dualLanguageLabel || 'Second Language (Optional):';
         document.getElementById('categoryLabel').textContent = t.categoryLabel || 'Filter by Location:';
+        document.getElementById('cardTypeLabel').textContent = t.cardTypeLabel || 'Card Type:';
         
         // Update category filter options
         if (t.categories) {
@@ -266,19 +269,44 @@ class ScavengerHunt {
             categoryFilter.options[3].textContent = t.categories.garden;
         }
         
+        // Update card type options
+        if (t.cardTypes) {
+            const cardTypeSelect = document.getElementById('cardTypeSelect');
+            cardTypeSelect.options[0].textContent = t.cardTypes.quiz;
+            cardTypeSelect.options[1].textContent = t.cardTypes.task;
+        }
+        
         // Update language selector
         document.getElementById('languageSelect').value = this.currentLanguage;
         
         // Prevent selecting same language twice
         this.updateSecondLanguageOptions();
         
-        // Update clues and setup guide
-        this.clues = t.clues || [];
-        this.currentOrder = [...this.clues];
+        // Update clues based on card type
+        this.loadCurrentCards();
         this.applyFilters();
         this.renderCards();
         this.generatePrintCards();
         this.updateSetupGuide(t);
+    }
+
+    loadCurrentCards() {
+        const t = this.translations[this.currentLanguage];
+        if (this.currentCardType === 'quiz') {
+            this.clues = t.clues || [];
+        } else {
+            this.clues = t.tasks || [];
+        }
+        this.currentOrder = [...this.clues];
+    }
+
+    setCardType(cardType) {
+        this.currentCardType = cardType;
+        this.revealedAnswers.clear(); // Clear revealed answers when switching
+        this.loadCurrentCards();
+        this.applyFilters();
+        this.renderCards();
+        this.generatePrintCards();
     }
 
     setSecondLanguage(langCode) {
@@ -361,56 +389,79 @@ class ScavengerHunt {
 
     createCardElement(clue, displayNumber) {
         const card = document.createElement('div');
-        card.className = 'card';
+        card.className = this.currentCardType === 'task' ? 'card task-card' : 'card';
         card.dataset.clueId = clue.id;
 
         const isRevealed = this.revealedAnswers.has(clue.id);
         const t = this.translations[this.currentLanguage];
         
-        // Get clue text for primary and secondary language
-        let clueHTML = '';
+        // Determine if this is a quiz or task card
+        const isTaskCard = this.currentCardType === 'task';
+        const contentField = isTaskCard ? 'task' : 'clue';
+        const contentArray = isTaskCard ? 'tasks' : 'clues';
+        
+        // Get content text for primary and secondary language
+        let contentHTML = '';
         if (this.secondLanguage && this.translations[this.secondLanguage]) {
-            const secondClue = this.translations[this.secondLanguage].clues.find(c => c.id === clue.id);
-            if (secondClue) {
-                clueHTML = `
-                    <div class="card-clue card-clue-dual">
-                        <div class="card-clue-primary">${clue.clue}</div>
-                        <div class="card-clue-secondary">${secondClue.clue}</div>
+            const secondContent = this.translations[this.secondLanguage][contentArray]?.find(c => c.id === clue.id);
+            if (secondContent) {
+                const primaryClass = isTaskCard ? 'card-task-primary' : 'card-clue-primary';
+                const secondaryClass = isTaskCard ? 'card-task-secondary' : 'card-clue-secondary';
+                const wrapperClass = isTaskCard ? 'card-task card-task-dual' : 'card-clue card-clue-dual';
+                contentHTML = `
+                    <div class="${wrapperClass}">
+                        <div class="${primaryClass}">${clue[contentField]}</div>
+                        <div class="${secondaryClass}">${secondContent[contentField]}</div>
                     </div>
                 `;
             } else {
-                clueHTML = `<div class="card-clue">${clue.clue}</div>`;
+                const singleClass = isTaskCard ? 'card-task' : 'card-clue';
+                contentHTML = `<div class="${singleClass}">${clue[contentField]}</div>`;
             }
         } else {
-            clueHTML = `<div class="card-clue">${clue.clue}</div>`;
-        }
-        
-        // Get answer text
-        let answerText = '';
-        if (isRevealed) {
-            if (this.secondLanguage && this.translations[this.secondLanguage]) {
-                const secondClue = this.translations[this.secondLanguage].clues.find(c => c.id === clue.id);
-                answerText = secondClue ? `${clue.answer} / ${secondClue.answer}` : clue.answer;
-            } else {
-                answerText = clue.answer;
-            }
-        } else {
-            answerText = t?.cardAnswer || 'Click to reveal answer';
+            const singleClass = isTaskCard ? 'card-task' : 'card-clue';
+            contentHTML = `<div class="${singleClass}">${clue[contentField]}</div>`;
         }
         
         // Get category badge
         const categoryClass = clue.category || 'indoor';
         const categoryEmoji = categoryClass === 'outdoor' ? '🌳' : categoryClass === 'garden' ? '🌻' : '🏠';
         
+        // Build card content based on type
+        let cardSpecificContent = '';
+        if (isTaskCard) {
+            // Task card shows points instead of answer
+            const pointsLabel = t?.taskPoints || 'Points:';
+            cardSpecificContent = `
+                <div class="card-points">${pointsLabel} ${clue.points}</div>
+            `;
+        } else {
+            // Quiz card shows answer
+            let answerText = '';
+            if (isRevealed) {
+                if (this.secondLanguage && this.translations[this.secondLanguage]) {
+                    const secondClue = this.translations[this.secondLanguage].clues.find(c => c.id === clue.id);
+                    answerText = secondClue ? `${clue.answer} / ${secondClue.answer}` : clue.answer;
+                } else {
+                    answerText = clue.answer;
+                }
+            } else {
+                answerText = t?.cardAnswer || 'Click to reveal answer';
+            }
+            cardSpecificContent = `
+                <div class="card-answer ${isRevealed ? 'revealed' : ''}" onclick="scavengerHunt.toggleAnswer(${clue.id})">
+                    ${answerText}
+                </div>
+            `;
+        }
+        
         card.innerHTML = `
             <div class="card-content">
                 <div class="card-category ${categoryClass}">${categoryEmoji}</div>
                 <div class="card-number">${displayNumber}</div>
                 <div class="card-emoji">${clue.emoji}</div>
-                ${clueHTML}
-                <div class="card-answer ${isRevealed ? 'revealed' : ''}" onclick="scavengerHunt.toggleAnswer(${clue.id})">
-                    ${answerText}
-                </div>
+                ${contentHTML}
+                ${cardSpecificContent}
             </div>
         `;
 
@@ -470,36 +521,44 @@ class ScavengerHunt {
         printSection.innerHTML = '<div class="print-cards"></div>';
         
         const printCards = printSection.querySelector('.print-cards');
+        const t = this.translations[this.currentLanguage];
+        const isTaskCard = this.currentCardType === 'task';
+        const contentField = isTaskCard ? 'task' : 'clue';
+        const contentArray = isTaskCard ? 'tasks' : 'clues';
         
         this.currentOrder.forEach((clue, index) => {
             const printCard = document.createElement('div');
             printCard.className = 'print-card';
             
-            // Generate clue text for print
-            let clueText = '';
+            // Generate content text for print
+            let contentText = '';
             if (this.secondLanguage && this.translations[this.secondLanguage]) {
-                const secondClue = this.translations[this.secondLanguage].clues.find(c => c.id === clue.id);
-                if (secondClue) {
-                    clueText = `
-                        <div class="print-card-clue-primary">${clue.clue}</div>
-                        <div class="print-card-clue-secondary">${secondClue.clue}</div>
+                const secondContent = this.translations[this.secondLanguage][contentArray]?.find(c => c.id === clue.id);
+                if (secondContent) {
+                    contentText = `
+                        <div class="print-card-clue-primary">${clue[contentField]}</div>
+                        <div class="print-card-clue-secondary">${secondContent[contentField]}</div>
                     `;
                 } else {
-                    clueText = `<div class="print-card-clue">${clue.clue}</div>`;
+                    contentText = `<div class="print-card-clue">${clue[contentField]}</div>`;
                 }
             } else {
-                clueText = `<div class="print-card-clue">${clue.clue}</div>`;
+                contentText = `<div class="print-card-clue">${clue[contentField]}</div>`;
             }
             
             // Get category badge
             const categoryClass = clue.category || 'indoor';
             const categoryEmoji = categoryClass === 'outdoor' ? '🌳' : categoryClass === 'garden' ? '🌻' : '🏠';
             
+            // Add points for task cards
+            const pointsHTML = isTaskCard ? `<div class="print-card-points">${t?.taskPoints || 'Points:'} ${clue.points}</div>` : '';
+            
             printCard.innerHTML = `
                 <div class="print-card-category ${categoryClass}">${categoryEmoji}</div>
                 <div class="print-card-number">${index + 1}</div>
                 <div class="print-card-emoji">${clue.emoji}</div>
-                ${clueText}
+                ${contentText}
+                ${pointsHTML}
             `;
             printCards.appendChild(printCard);
         });
