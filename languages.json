@@ -388,6 +388,62 @@
         "task": "Create a spooky shadow puppet show on the wall (needs flashlight)",
         "points": 20,
         "category": "indoor"
+      },
+      {
+        "id": 23,
+        "emoji": "👨‍👩‍👧",
+        "task": "PARENT TASK: Help your child create a spooky shadow puppet on the wall",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 24,
+        "emoji": "📖",
+        "task": "PARENT TASK: Read a Halloween story together with spooky voices",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 25,
+        "emoji": "🎨",
+        "task": "PARENT TASK: Paint Halloween faces together (washable paint only!)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 26,
+        "emoji": "🏃",
+        "task": "PARENT TASK: Race to collect 10 leaves - parent vs child!",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 27,
+        "emoji": "🎶",
+        "task": "PARENT TASK: Teach your child a spooky Halloween song and sing together",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 28,
+        "emoji": "🔦",
+        "task": "PARENT TASK: Go on a flashlight treasure hunt together in the dark",
+        "points": 20,
+        "category": "outdoor"
+      },
+      {
+        "id": 29,
+        "emoji": "🍪",
+        "task": "PARENT TASK: Bake Halloween cookies together (with supervision)",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 30,
+        "emoji": "📸",
+        "task": "PARENT TASK: Take silly spooky photos together in costumes",
+        "points": 10,
+        "category": "indoor"
       }
     ],
     "cardTypes": {
@@ -784,6 +840,62 @@
         "emoji": "🌟",
         "task": "Vytvor strašidelné tieňové bábkové divadlo na stene (potrebuješ baterku)",
         "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 23,
+        "emoji": "👨‍👩‍👧",
+        "task": "ÚLOHA PRE RODIČOV: Pomôžte dieťaťu vytvoriť desivú tieňovú bábku na stene",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 24,
+        "emoji": "📖",
+        "task": "ÚLOHA PRE RODIČOV: Prečítajte spoločne halloweensky príbeh desivými hlasmi",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 25,
+        "emoji": "🎨",
+        "task": "ÚLOHA PRE RODIČOV: Maľujte spoločne halloweenske tváre (iba zmývateľné farby!)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 26,
+        "emoji": "🏃",
+        "task": "ÚLOHA PRE RODIČOV: Závod v zbieraní 10 listov - rodič proti dieťaťu!",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 27,
+        "emoji": "🎶",
+        "task": "ÚLOHA PRE RODIČOV: Naučte dieťa desivú halloweensku pieseň a spievajte spoločne",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 28,
+        "emoji": "🔦",
+        "task": "ÚLOHA PRE RODIČOV: Choďte spoločne nalov pokladu s baterkou vo tme",
+        "points": 20,
+        "category": "outdoor"
+      },
+      {
+        "id": 29,
+        "emoji": "🍪",
+        "task": "ÚLOHA PRE RODIČOV: Upečte spoločne halloweenske sušienky (s dohľadom)",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 30,
+        "emoji": "📸",
+        "task": "ÚLOHA PRE RODIČOV: Odfotografujte sa spoločne v kostýmoch na vtipných fotkách",
+        "points": 10,
         "category": "indoor"
       }
     ],
@@ -1182,6 +1294,62 @@
         "task": "Vytvoř strašidelné stínové loutkové divadlo na stěně (potřebuješ baterku)",
         "points": 20,
         "category": "indoor"
+      },
+      {
+        "id": 23,
+        "emoji": "👨‍👩‍👧",
+        "task": "ÚKOL PRO RODIČE: Pomozte dítěti vytvořit strašidelný stínový loutek na stěně",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 24,
+        "emoji": "📖",
+        "task": "ÚKOL PRO RODIČE: Přečtěte společně halloweenský příběh strašidelnými hlasy",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 25,
+        "emoji": "🎨",
+        "task": "ÚKOL PRO RODIČE: Malujte společně halloweenské obličeje (pouze smyvatelné barvy!)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 26,
+        "emoji": "🏃",
+        "task": "ÚKOL PRO RODIČE: Závod ve sbírání 10 listů - rodič proti dítěti!",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 27,
+        "emoji": "🎶",
+        "task": "ÚKOL PRO RODIČE: Naučte dítě strašidelnou halloweenskou písničku a zpívejte společně",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 28,
+        "emoji": "🔦",
+        "task": "ÚKOL PRO RODIČE: Jděte společně na lov pokladu s baterkou ve tmě",
+        "points": 20,
+        "category": "outdoor"
+      },
+      {
+        "id": 29,
+        "emoji": "🍪",
+        "task": "ÚKOL PRO RODIČE: Upečte společně halloweenské sušenky (s dohledem)",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 30,
+        "emoji": "📸",
+        "task": "ÚKOL PRO RODIČE: Vyfotěte se společně v kostýmech na vtipných fotkách",
+        "points": 10,
+        "category": "indoor"
       }
     ],
     "cardTypes": {
@@ -1579,6 +1747,62 @@
         "task": "Lav et uhyggeligt skyggespil på væggen (skal bruge lommelygte)",
         "points": 20,
         "category": "indoor"
+      },
+      {
+        "id": 23,
+        "emoji": "👨‍👩‍👧",
+        "task": "FORÆLDER OPGAVE: Hjælp dit barn med at lave uhyggelige skyggefigurer på væggen",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 24,
+        "emoji": "📖",
+        "task": "FORÆLDER OPGAVE: Læs en Halloween-historie sammen med uhyggelige stemmer",
+        "points": 10,
+        "category": "indoor"
+      },
+      {
+        "id": 25,
+        "emoji": "🎨",
+        "task": "FORÆLDER OPGAVE: Mal Halloween-ansigter sammen (kun afvaskelig maling!)",
+        "points": 20,
+        "category": "indoor"
+      },
+      {
+        "id": 26,
+        "emoji": "🏃",
+        "task": "FORÆLDER OPGAVE: Løb om at samle 10 blade - forælder mod barn!",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 27,
+        "emoji": "🎶",
+        "task": "FORÆLDER OPGAVE: Lær dit barn en uhyggelig Halloween-sang og syng sammen",
+        "points": 15,
+        "category": "indoor"
+      },
+      {
+        "id": 28,
+        "emoji": "🔦",
+        "task": "FORÆLDER OPGAVE: Gå på lommelygtskat sammen i mørket",
+        "points": 20,
+        "category": "outdoor"
+      },
+      {
+        "id": 29,
+        "emoji": "🍪",
+        "task": "FORÆLDER OPGAVE: Bag Halloween-småkager sammen (med opsyn)",
+        "points": 25,
+        "category": "indoor"
+      },
+      {
+        "id": 30,
+        "emoji": "📸",
+        "task": "FORÆLDER OPGAVE: Tag sjove uhyggelige billeder sammen i kostumer",
+        "points": 10,
+        "category": "indoor"
       }
     ],
     "cardTypes": {
@@ -1587,402 +1811,5 @@
     },
     "cardTypeLabel": "Kort Type:",
     "taskPoints": "Point:"
-  },
-  "fo": {
-    "title": "🎃 Halloween Skattaleitingarkort 🎃",
-    "buttons": {
-      "shuffle": "🔀 Blanda Kort",
-      "print": "🖨️ Prenta Kort",
-      "reset": "🔄 Endurnýggja Leiting",
-      "setup": "📋 Uppseting",
-      "dualLanguage": "🌍 Tvey Mál"
-    },
-    "setupGuide": {
-      "title": "🎯 Hvussu tú setur upp tína Halloween Skattaleiting",
-      "steps": [
-        {
-          "title": "🖨️ Prenta Kortini",
-          "content": "Trýst á \"Prenta Kort\" knappin omanfyri fyri at fáa kropp-kopiar. Prenta á hardan pappír fyri bestu úrslitini!"
-        },
-        {
-          "title": "🔄 Goym Kort í Öðrum Raðfylgi",
-          "content": "<strong>Byrja við Kort 2:</strong> Goym tað har börn fáa snaks (køkur/matgoymsla)<br><strong>Kort 3:</strong> Goym undir matborðinum<br><strong>Halt áfram:</strong> Hvört kort fer har fyrra svarið vísir"
-        },
-        {
-          "title": "🎁 Set upp Endaliga Vinningurin",
-          "content": "Goym endamálið við húsadyrar (ella uttan fyri). Ger tað serligt - poki við sykri, lítil leikur ella Halloween gott!"
-        },
-        {
-          "title": "🚀 Byrja Ævintýrið",
-          "content": "Gev Kort 1 til tey børnini tín fyri at byrja leitingina. Vit hvussu spenningin veksur!"
-        }
-      ],
-      "tips": {
-        "title": "💡 Góð Ráð",
-        "items": [
-          "Royn trupulleikin - tryggja at gátirnar eru truplar, men loystar",
-          "Set greið mörk fyri hvørji øki eru \"í spæli\"",
-          "Goym smá gott á hvørjum stað fyri eyka ávirkan",
-          "Hav vara-kort klárt um eitt hvørvur",
-          "Trygd fyrst - tryggja at allir dulustað eru tryggir og atkomuligir"
-        ]
-      }
-    },
-    "cardAnswer": "Trýst fyri at vísa svar",
-    "notifications": {
-      "shuffled": "Kort blandað! 🔀",
-      "reset": "Leiting endurnýggja! 🔄",
-      "fallback": "📁 Brúkar innbyggd kort (JSON fíla ikki atkomandi)",
-      "newClue": "Nýtt víst tillagt! ✨",
-      "exported": "Leiting flutt út! 📁"
-    },
-    "clues": [
-      {
-        "id": 1,
-        "emoji": "🥣",
-        "clue": "Finn titt fyrsta gott, eg eri har tú fært mat at eta.",
-        "answer": "Køkur/Skál",
-        "location": "kitchen",
-        "category": "indoor"
-      },
-      {
-        "id": 2,
-        "emoji": "🍬",
-        "clue": "Um tú vilt finna eitt sykurmál skjótt, skalt tú leita undir tínum kvøldmati.",
-        "answer": "Undir matborðinum",
-        "location": "dining_room",
-        "category": "indoor"
-      },
-      {
-        "id": 3,
-        "emoji": "🎃",
-        "clue": "Tað er ov skjótt at steðga, set teg á okkurt tú situr á.",
-        "answer": "Stólur/Sófi",
-        "location": "living_room",
-        "category": "indoor"
-      },
-      {
-        "id": 4,
-        "emoji": "🧪",
-        "clue": "Tað er tími at steðga fyri eina drekku, nú eri eg nær vaskunum.",
-        "answer": "Køkurvaskur",
-        "location": "kitchen",
-        "category": "indoor"
-      },
-      {
-        "id": 5,
-        "emoji": "🐸",
-        "clue": "Tú hevur enn fleiri víst, næsta er við tínum skógvum.",
-        "answer": "Skógarstativ/Skáp",
-        "location": "entryway",
-        "category": "indoor"
-      },
-      {
-        "id": 6,
-        "emoji": "💀",
-        "clue": "Eg kann vera trupul at síggja, men eg eri nær tínum sjónvarpi.",
-        "answer": "Við sjónvarpið",
-        "location": "living_room",
-        "category": "indoor"
-      },
-      {
-        "id": 7,
-        "emoji": "👻",
-        "clue": "Eingin grund til at kanna uttan, eg eri beint við tína sársíðu.",
-        "answer": "Náttborð",
-        "location": "bedroom",
-        "category": "indoor"
-      },
-      {
-        "id": 8,
-        "emoji": "☠️",
-        "clue": "Nú eri eg í tíni sári! Eg eri undir har tú leggur titt høvd.",
-        "answer": "Undir koddanum",
-        "location": "bedroom",
-        "category": "indoor"
-      },
-      {
-        "id": 9,
-        "emoji": "🦇",
-        "clue": "Næsta víst er tað tú hevur tørv á, eg eri við bókunum tú lesur.",
-        "answer": "Bókareyl/Bókasavn",
-        "location": "study",
-        "category": "indoor"
-      },
-      {
-        "id": 10,
-        "emoji": "🧙‍♀️",
-        "clue": "Finn næsta víst, um tú tørr, eg eri har tú goymir tín undirklæði.",
-        "answer": "Kommodu skuffa",
-        "location": "bedroom",
-        "category": "indoor"
-      },
-      {
-        "id": 11,
-        "emoji": "🧙‍♂️",
-        "clue": "Nú um tú fylgir hesi leið, finnur tú meg har tú tekur bad.",
-        "answer": "Badstofa/Badkar",
-        "location": "bathroom",
-        "category": "indoor"
-      },
-      {
-        "id": 12,
-        "emoji": "🧹",
-        "clue": "Hetta er titt síðsta víst, fleiri koma ikki. Fyri titt endamál, kanna húsadyrar.",
-        "answer": "Húsadyrar",
-        "location": "entryway",
-        "category": "outdoor"
-      },
-      {
-        "id": 13,
-        "emoji": "🕷️",
-        "clue": "Ver ikki ræddin fyri myrkurið, eg duljist har klæði fáa sín neista!",
-        "answer": "Vaskimaskina/Vaskistofa",
-        "location": "laundry",
-        "category": "indoor"
-      },
-      {
-        "id": 14,
-        "emoji": "🎭",
-        "clue": "Tá tú kennir teg kuld, eri eg har hitið tekur yvir.",
-        "answer": "Eldstað/Hitari",
-        "location": "living_room",
-        "category": "indoor"
-      },
-      {
-        "id": 15,
-        "emoji": "🔮",
-        "clue": "Líti har tíðin tikkar burtur, titt næsta víst bíðar har allan dag.",
-        "answer": "Klokka/Klokku øki",
-        "location": "any_room",
-        "category": "indoor"
-      },
-      {
-        "id": 16,
-        "emoji": "🕯️",
-        "clue": "Eg eri kaldur og háur, haldi tín mat frá at ringa alt saman.",
-        "answer": "Køliskáp",
-        "location": "kitchen",
-        "category": "indoor"
-      },
-      {
-        "id": 17,
-        "emoji": "🧛‍♂️",
-        "clue": "Har tú hengur tín klæði so pent, kanna staðin sum ikki kann vinnast!",
-        "answer": "Skáp/Klædiskáp",
-        "location": "bedroom",
-        "category": "indoor"
-      },
-      {
-        "id": 18,
-        "emoji": "🌙",
-        "clue": "Tá tú lítur á teg sjálvan hvønn dag, spegli eg aftur á allar hættir.",
-        "answer": "Spegil/Badstofu spegil",
-        "location": "bathroom",
-        "category": "indoor"
-      },
-      {
-        "id": 19,
-        "emoji": "🎪",
-        "clue": "Eg havi stig men gangi ikki, eg hjálpi tær at koma upp hátt uttan at tosa.",
-        "answer": "Stig/Stigagongd",
-        "location": "hallway",
-        "category": "indoor"
-      },
-      {
-        "id": 20,
-        "emoji": "🦴",
-        "clue": "Har diskar verða reinir og glimra bjørt, kanna hendan stað bæði dag og nátt.",
-        "answer": "Diskvaskimaskina",
-        "location": "kitchen",
-        "category": "indoor"
-      },
-      {
-        "id": 21,
-        "emoji": "🔮",
-        "clue": "Eg eri verndarin av tínum kæra heiminum, eg haldi veðrið frá at koma ov nær.",
-        "answer": "Vindeygu/Vindeygubrú",
-        "location": "any_room",
-        "category": "indoor"
-      },
-      {
-        "id": 22,
-        "emoji": "🧟‍♀️",
-        "clue": "Tá dagin er liðin og tú hevur tørv á hvíld, líti har koddar eru bestir.",
-        "answer": "Sófikoddar/Sófi",
-        "location": "living_room",
-        "category": "indoor"
-      }
-    ],
-    "categories": {
-      "all": "Øll Støð",
-      "indoor": "🏠 Inni",
-      "outdoor": "🌳 Úti",
-      "garden": "🌻 Garður"
-    },
-    "dualLanguageLabel": "Annað Mál (Valkvætt):",
-    "categoryLabel": "Filtrera eftir Staði:",
-    "tasks": [
-      {
-        "id": 1,
-        "emoji": "🕷️",
-        "task": "Ger ein ræðiliga eiturkoppa-gongd yvir stovuna (ganga á hondum og fótum við maganum upp)",
-        "points": 10,
-        "category": "indoor"
-      },
-      {
-        "id": 2,
-        "emoji": "🧟",
-        "task": "Gakk sum ein uppvakningur í 2 minuttir - seinar, stívir rørsluir við armunum út",
-        "points": 10,
-        "category": "outdoor"
-      },
-      {
-        "id": 3,
-        "emoji": "🎃",
-        "task": "Skera ella teikna eitt ræðilegt andlit á eina grágrýtisgrýslu",
-        "points": 20,
-        "category": "garden"
-      },
-      {
-        "id": 4,
-        "emoji": "👻",
-        "task": "Siga øllum eina ræðiliga dreymasøgu (í minsta lagi 1 minutt long)",
-        "points": 15,
-        "category": "indoor"
-      },
-      {
-        "id": 5,
-        "emoji": "🦇",
-        "task": "Hanga á høvdinum sum ein flogmús í 20 sekund (frá klatristellum ella trygdum stað)",
-        "points": 15,
-        "category": "outdoor"
-      },
-      {
-        "id": 6,
-        "emoji": "🧙",
-        "task": "Skap ein gandadrykkur við 5 trygdum innihaldsevnum úr køkinum",
-        "points": 15,
-        "category": "indoor"
-      },
-      {
-        "id": 7,
-        "emoji": "🕸️",
-        "task": "Skap eitt eiturkoppanót við tráð ella garn (í minsta lagi 50 cm breitt)",
-        "points": 20,
-        "category": "indoor"
-      },
-      {
-        "id": 8,
-        "emoji": "🌕",
-        "task": "Hýl til mánnan sum ein varúlvur 5 ferðir",
-        "points": 5,
-        "category": "outdoor"
-      },
-      {
-        "id": 9,
-        "emoji": "🍂",
-        "task": "Sanka 20 fallin lev og set tey eftir stødd",
-        "points": 15,
-        "category": "garden"
-      },
-      {
-        "id": 10,
-        "emoji": "🦴",
-        "task": "Dansa beinagrindar-dansin - skakka kropp sum raslandi bein í 1 minutt",
-        "points": 10,
-        "category": "indoor"
-      },
-      {
-        "id": 11,
-        "emoji": "🧛",
-        "task": "Tel afturímóti frá 100 við tíni ræðiligastu vampýrródd",
-        "points": 15,
-        "category": "indoor"
-      },
-      {
-        "id": 12,
-        "emoji": "🐈‍⬛",
-        "task": "Spæl svarta ketta - tønja teg, mjálva og smoyga í 2 minuttir",
-        "points": 10,
-        "category": "indoor"
-      },
-      {
-        "id": 13,
-        "emoji": "🎭",
-        "task": "Tak eitt ræðiligt búni á við lutum, sum tú finnur umhvørvis í húsinum",
-        "points": 20,
-        "category": "indoor"
-      },
-      {
-        "id": 14,
-        "emoji": "🌙",
-        "task": "Finn 5 lutir úti, sum hava sama litina sum náttarhimin",
-        "points": 15,
-        "category": "outdoor"
-      },
-      {
-        "id": 15,
-        "emoji": "🍁",
-        "task": "Hoppa í eina løvabúnka (ella ger eina búnka fyrst!)",
-        "points": 10,
-        "category": "garden"
-      },
-      {
-        "id": 16,
-        "emoji": "🔮",
-        "task": "Spá framtíðina - siga 3 stuttlig spádómar til familumeðlimum",
-        "points": 10,
-        "category": "indoor"
-      },
-      {
-        "id": 17,
-        "emoji": "🪦",
-        "task": "Skap ein stuttligan grafstein-tekst til eina uppdiktaða persón",
-        "points": 15,
-        "category": "indoor"
-      },
-      {
-        "id": 18,
-        "emoji": "🌾",
-        "task": "Sanka 10 ymisk sløg av náttúrligum lutum úr garðinum",
-        "points": 20,
-        "category": "garden"
-      },
-      {
-        "id": 19,
-        "emoji": "🏚️",
-        "task": "Bygg eitt uppvaknings-hús við koddum, teppum og húsabúnaði",
-        "points": 25,
-        "category": "indoor"
-      },
-      {
-        "id": 20,
-        "emoji": "⚡",
-        "task": "Ger 10 hoppatak hvørja ferð onkur sigur 'Halloween'",
-        "points": 10,
-        "category": "indoor"
-      },
-      {
-        "id": 21,
-        "emoji": "🍄",
-        "task": "Leita eftir soppur ella áhugaverdum soppur í garðinum (hygg, men tak ikki!)",
-        "points": 15,
-        "category": "garden"
-      },
-      {
-        "id": 22,
-        "emoji": "🌟",
-        "task": "Skap eitt ræðiligt skuggabrúðuleikhús á vegginum (skal hava lummu)",
-        "points": 20,
-        "category": "indoor"
-      }
-    ],
-    "cardTypes": {
-      "quiz": "❓ Spurningakort (Gátur)",
-      "task": "✅ Uppgávukort (Avbjóðingar)"
-    },
-    "cardTypeLabel": "Korta Slag:",
-    "taskPoints": "Stig:"
   }
 }
