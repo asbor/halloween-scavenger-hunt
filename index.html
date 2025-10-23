@@ -10,15 +10,37 @@
     <div class="container">
         <header>
             <h1 id="mainTitle">🎃 Halloween Scavenger Hunt Cards 🎃</h1>
-            <div class="language-selector">
-                <label for="languageSelect">🌍 Language:</label>
-                <select id="languageSelect">
-                    <option value="en">English</option>
-                    <option value="sk">Slovenčina</option>
-                    <option value="cs">Čeština</option>
-                    <option value="da">Dansk</option>
-                    <option value="fo">Føroyskt</option>
-                </select>
+            <div class="language-controls">
+                <div class="language-selector">
+                    <label for="languageSelect">🌍 Language:</label>
+                    <select id="languageSelect">
+                        <option value="en">English</option>
+                        <option value="sk">Slovenčina</option>
+                        <option value="cs">Čeština</option>
+                        <option value="da">Dansk</option>
+                        <option value="fo">Føroyskt</option>
+                    </select>
+                </div>
+                <div class="language-selector">
+                    <label for="secondLanguageSelect" id="secondLanguageLabel">Second Language (Optional):</label>
+                    <select id="secondLanguageSelect">
+                        <option value="">None</option>
+                        <option value="en">English</option>
+                        <option value="sk">Slovenčina</option>
+                        <option value="cs">Čeština</option>
+                        <option value="da">Dansk</option>
+                        <option value="fo">Føroyskt</option>
+                    </select>
+                </div>
+                <div class="category-selector">
+                    <label for="categoryFilter" id="categoryLabel">Filter by Location:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Locations</option>
+                        <option value="indoor">🏠 Indoor</option>
+                        <option value="outdoor">🌳 Outdoor</option>
+                        <option value="garden">🌻 Garden</option>
+                    </select>
+                </div>
             </div>
             <div class="controls">
                 <button id="shuffleBtn">🔀 Shuffle Cards</button>

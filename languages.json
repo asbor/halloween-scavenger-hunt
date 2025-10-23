@@ -3,10 +3,19 @@
     "title": "🎃 Halloween Scavenger Hunt Cards 🎃",
     "buttons": {
       "shuffle": "🔀 Shuffle Cards",
-      "print": "🖨️ Print Cards", 
+      "print": "🖨️ Print Cards",
       "reset": "🔄 Reset Hunt",
-      "setup": "📋 Setup Guide"
+      "setup": "📋 Setup Guide",
+      "dualLanguage": "🌍 Dual Language"
     },
+    "categories": {
+      "all": "All Locations",
+      "indoor": "🏠 Indoor",
+      "outdoor": "🌳 Outdoor",
+      "garden": "🌻 Garden"
+    },
+    "dualLanguageLabel": "Second Language (Optional):",
+    "categoryLabel": "Filter by Location:",
     "setupGuide": {
       "title": "🎯 How to Set Up Your Halloween Scavenger Hunt",
       "steps": [
@@ -15,7 +24,7 @@
           "content": "Click the \"Print Cards\" button above to get physical copies. Print on cardstock for best results!"
         },
         {
-          "title": "🔄 Hide Cards in Reverse Order", 
+          "title": "🔄 Hide Cards in Reverse Order",
           "content": "<strong>Start with Card 2:</strong> Hide it where kids get snacks (kitchen/pantry)<br><strong>Card 3:</strong> Hide under the dinner table<br><strong>Continue:</strong> Each card goes where the previous clue's answer points"
         },
         {
@@ -23,7 +32,7 @@
           "content": "Hide the ultimate treasure at the front door (or just outside). Make it special - candy bag, small toy, or Halloween treat!"
         },
         {
-          "title": "🚀 Start the Adventure", 
+          "title": "🚀 Start the Adventure",
           "content": "Hand Card 1 to your kids to begin the hunt. Watch the excitement unfold!"
         }
       ],
@@ -32,7 +41,7 @@
         "items": [
           "Test the difficulty - make sure riddles are challenging but solvable",
           "Set clear boundaries for which areas are \"in play\"",
-          "Hide small treats at each location for extra motivation", 
+          "Hide small treats at each location for extra motivation",
           "Have backup clues ready in case one gets lost",
           "Safety first - ensure all hiding spots are safe and accessible"
         ]
@@ -41,7 +50,7 @@
     "cardAnswer": "Click to reveal answer",
     "notifications": {
       "shuffled": "Cards shuffled! 🔀",
-      "reset": "Hunt reset! 🔄", 
+      "reset": "Hunt reset! 🔄",
       "fallback": "📁 Using built-in cards (JSON file not accessible)",
       "newClue": "New clue added! ✨",
       "exported": "Hunt exported! 📁"
@@ -52,154 +61,176 @@
         "emoji": "🥣",
         "clue": "Find your very first treat, I'm where you get food to eat.",
         "answer": "Kitchen/Bowl",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
-        "id": 2, 
+        "id": 2,
         "emoji": "🍬",
         "clue": "If you want to find a candy, early. You must look under your dinner.",
         "answer": "Under dinner table",
-        "location": "dining_room"
+        "location": "dining_room",
+        "category": "indoor"
       },
       {
         "id": 3,
-        "emoji": "🎃", 
+        "emoji": "🎃",
         "clue": "It's too early to quit. Sit on something you sit.",
         "answer": "Chair/Couch",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 4,
         "emoji": "🧪",
         "clue": "It's time to stop for a drink. Now I'm close to the sink.",
-        "answer": "Kitchen sink", 
-        "location": "kitchen"
+        "answer": "Kitchen sink",
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 5,
         "emoji": "🐸",
         "clue": "You still have more clues. The next one is by your shoes.",
         "answer": "Shoe rack/Closet",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "indoor"
       },
       {
         "id": 6,
         "emoji": "💀",
         "clue": "I might be hard to see. But I'm close to your TV.",
         "answer": "Near television",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 7,
-        "emoji": "👻", 
+        "emoji": "👻",
         "clue": "No need to check outside, I'm right at your bedside.",
         "answer": "Bedside table",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 8,
         "emoji": "☠️",
         "clue": "Now I'm in your bed! I'm under where you put your head.",
         "answer": "Under pillow",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 9,
         "emoji": "🦇",
         "clue": "The next clue is what you need. I'm near the books you read.",
         "answer": "Bookshelf/Library",
-        "location": "study"
+        "location": "study",
+        "category": "indoor"
       },
       {
         "id": 10,
         "emoji": "🧙‍♀️",
         "clue": "Find the next clue, if you dare. I'm where you keep your underwear.",
-        "answer": "Dresser drawer", 
-        "location": "bedroom"
+        "answer": "Dresser drawer",
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 11,
         "emoji": "🧙‍♂️",
         "clue": "Now if you follow this path, You'll find me where you take a bath.",
         "answer": "Bathroom/Bathtub",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 12,
         "emoji": "🧹",
         "clue": "This is your last clue. There won't be anymore. For your final treat, check the front door.",
         "answer": "Front door",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "outdoor"
       },
       {
         "id": 13,
         "emoji": "🕷️",
         "clue": "Don't be scared of the dark, I'm hiding where clothes get their spark!",
         "answer": "Washing machine/Laundry room",
-        "location": "laundry"
+        "location": "laundry",
+        "category": "indoor"
       },
       {
         "id": 14,
         "emoji": "🎭",
         "clue": "When you're feeling quite cold, I'm where warmth takes hold.",
         "answer": "Fireplace/Heater",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 15,
         "emoji": "🔮",
         "clue": "Look where time ticks away, your next clue waits there all day.",
         "answer": "Clock/Watch area",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 16,
         "emoji": "🕯️",
         "clue": "I'm cold and quite tall, keeping your food from going bad at all.",
         "answer": "Refrigerator",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 17,
         "emoji": "🧛‍♂️",
         "clue": "Where you hang your clothes so neat, check the place that can't be beat!",
         "answer": "Closet/Wardrobe",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 18,
         "emoji": "🌙",
         "clue": "When you look at yourself each day, I reflect back in every way.",
         "answer": "Mirror/Bathroom mirror",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 19,
         "emoji": "🎪",
         "clue": "I have steps but I don't walk, I help you reach up high without talk.",
         "answer": "Stairs/Staircase",
-        "location": "hallway"
+        "location": "hallway",
+        "category": "indoor"
       },
       {
         "id": 20,
         "emoji": "🦴",
         "clue": "Where dishes get clean and sparkly bright, check this spot both day and night.",
         "answer": "Dishwasher",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 21,
         "emoji": "🔮",
         "clue": "I'm the guardian of your home so dear, I keep the weather from getting too near.",
         "answer": "Windows/Window sill",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 22,
-        "emoji": "🧟‍♀️", 
+        "emoji": "🧟‍♀️",
         "clue": "When the day is done and you need some rest, look where pillows are at their best.",
         "answer": "Couch cushions/Sofa",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       }
     ]
   },
@@ -209,7 +240,8 @@
       "shuffle": "🔀 Zamiešať Kartičky",
       "print": "🖨️ Tlačiť Kartičky",
       "reset": "🔄 Resetovať Hru",
-      "setup": "📋 Návod na Nastavenie"
+      "setup": "📋 Návod na Nastavenie",
+      "dualLanguage": "🌍 Dvojjazyčný"
     },
     "setupGuide": {
       "title": "🎯 Ako Nastaviť Svoju Halloweensku Pokladnicu",
@@ -256,156 +288,186 @@
         "emoji": "🥣",
         "clue": "Nájdi svoju prvú pochúťku, som tam, kde dostávaš jedlo na stôl.",
         "answer": "Kuchyňa/Miska",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 2,
         "emoji": "🍬",
         "clue": "Ak chceš nájsť cukrík skoro, musíš hľadať pod večerou svojou.",
         "answer": "Pod jedálenským stolom",
-        "location": "dining_room"
+        "location": "dining_room",
+        "category": "indoor"
       },
       {
         "id": 3,
         "emoji": "🎃",
         "clue": "Ešte nie je čas skončiť, sadni si na niečo, na čom sa sedí.",
         "answer": "Stolička/Gauč",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 4,
         "emoji": "🧪",
         "clue": "Je čas zastaviť sa na nápoj, teraz som blízko drezu v kuchyni.",
         "answer": "Kuchynský drez",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 5,
         "emoji": "🐸",
         "clue": "Máš ešte viac kartičiek, ďalšia je pri tvojich topánkach.",
         "answer": "Stojan na topánky/Skriňa",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "indoor"
       },
       {
         "id": 6,
         "emoji": "💀",
         "clue": "Možno ma ťažko uvidíš, ale som blízko tvojej televízie.",
         "answer": "Pri televízii",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 7,
         "emoji": "👻",
         "clue": "Nemusíš hľadať vonku, som priamo pri tvojej posteli.",
         "answer": "Nočný stolík",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 8,
         "emoji": "☠️",
         "clue": "Teraz som v tvojej posteli! Som pod tým, kde položíš hlavu.",
         "answer": "Pod vankúšom",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 9,
         "emoji": "🦇",
         "clue": "Ďalšiu kartičku potrebuješ, som pri knihách, ktoré čítaš.",
         "answer": "Knižnica/Políčka s knihami",
-        "location": "study"
+        "location": "study",
+        "category": "indoor"
       },
       {
         "id": 10,
         "emoji": "🧙‍♀️",
         "clue": "Nájdi ďalšiu kartičku, ak sa odvážiš, som tam, kde máš spodné prádlo.",
         "answer": "Zásuvka komody",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 11,
         "emoji": "🧙‍♂️",
         "clue": "Ak budeš sledovať túto cestu, nájdeš ma tam, kde sa kúpeš.",
         "answer": "Kúpeľňa/Vaňa",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 12,
         "emoji": "🧹",
         "clue": "Toto je tvoja posledná kartička, viac už nebude. Pre svoju finálnu cenu skontroluj vchodové dvere.",
         "answer": "Vchodové dvere",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "outdoor"
       },
       {
         "id": 13,
         "emoji": "🕷️",
         "clue": "Neboj sa tmy, skrývam sa tam, kde oblečenie dostáva svoju iskru!",
         "answer": "Práčka/Práčovňa",
-        "location": "laundry"
+        "location": "laundry",
+        "category": "indoor"
       },
       {
         "id": 14,
         "emoji": "🎭",
         "clue": "Keď cítiš chlad, som tam, kde teplo preberá kontrolu.",
         "answer": "Krb/Ohrievač",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 15,
         "emoji": "🔮",
         "clue": "Pozri tam, kde čas tikne, tvoja ďalšia kartička tam čaká celý deň.",
         "answer": "Hodiny/Oblasť hodín",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 16,
         "emoji": "🕯️",
         "clue": "Som studený a vysoký, udržiavam tvoje jedlo, aby sa nepokazilo.",
         "answer": "Chladnička",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 17,
         "emoji": "🧛‍♂️",
         "clue": "Kde vešaš oblečenie tak úhľadne, skontroluj miesto, ktoré sa nedá poraziť!",
         "answer": "Skriňa/Šatník",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 18,
         "emoji": "🌙",
         "clue": "Keď sa každý deň pozrieš na seba, odrážam sa späť všetkými spôsobmi.",
         "answer": "Zrkadlo/Kúpeľňové zrkadlo",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 19,
         "emoji": "🎪",
         "clue": "Mám schody, ale nechodím, pomáham ti dostať sa vysoko bez reči.",
         "answer": "Schody/Schodisko",
-        "location": "hallway"
+        "location": "hallway",
+        "category": "indoor"
       },
       {
         "id": 20,
         "emoji": "🦴",
         "clue": "Kde sa riad umýva a iskrí čisto, skontroluj toto miesto v noci aj cez deň.",
         "answer": "Umývačka riadu",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 21,
         "emoji": "🔮",
         "clue": "Som strážca tvojho domova drahého, udržiavam počasie príliš blízko.",
         "answer": "Okná/Parapet",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 22,
         "emoji": "🧟‍♀️",
         "clue": "Keď je deň hotový a potrebuješ odpočinok, pozri tam, kde sú vankúše najlepšie.",
         "answer": "Vankúše na gauči/Sedačka",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       }
-    ]
+    ],
+    "categories": {
+      "all": "Všetky Lokality",
+      "indoor": "🏠 Vnútri",
+      "outdoor": "🌳 Vonku",
+      "garden": "🌻 Záhrada"
+    },
+    "dualLanguageLabel": "Druhý Jazyk (Voliteľné):",
+    "categoryLabel": "Filtrovať podľa Lokality:"
   },
   "cs": {
     "title": "🎃 Halloweenské Kartičky na Poklad 🎃",
@@ -413,7 +475,8 @@
       "shuffle": "🔀 Zamíchat Kartičky",
       "print": "🖨️ Tisknout Kartičky",
       "reset": "🔄 Resetovat Hru",
-      "setup": "📋 Návod na Nastavení"
+      "setup": "📋 Návod na Nastavení",
+      "dualLanguage": "🌍 Dvojjazyčný"
     },
     "setupGuide": {
       "title": "🎯 Jak Nastavit Svou Halloweenskou Hru na Poklad",
@@ -460,156 +523,186 @@
         "emoji": "🥣",
         "clue": "Najdi svou první pochoutku, jsem tam, kde dostáváš jídlo k jídlu.",
         "answer": "Kuchyně/Miska",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 2,
         "emoji": "🍬",
         "clue": "Pokud chceš najít cukrík brzy, musíš hledat pod svou večeří.",
         "answer": "Pod jídelním stolem",
-        "location": "dining_room"
+        "location": "dining_room",
+        "category": "indoor"
       },
       {
         "id": 3,
         "emoji": "🎃",
         "clue": "Ještě není čas skončit, sedni si na něco, na čem se sedí.",
         "answer": "Židle/Gauč",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 4,
         "emoji": "🧪",
         "clue": "Je čas zastavit se na nápoj, teraz jsem blízko dřezu v kuchyni.",
         "answer": "Kuchyňský dřez",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 5,
         "emoji": "🐸",
         "clue": "Máš ještě více kartiček, další je u tvých bot.",
         "answer": "Stojan na boty/Skříň",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "indoor"
       },
       {
         "id": 6,
         "emoji": "💀",
         "clue": "Možná mě těžko uvidíš, ale jsem blízko tvé televize.",
         "answer": "U televize",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 7,
         "emoji": "👻",
         "clue": "Nemusíš hledat venku, jsem přímo u tvé postele.",
         "answer": "Noční stolek",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 8,
         "emoji": "☠️",
         "clue": "Teraz jsem v tvé posteli! Jsem pod tím, kde položíš hlavu.",
         "answer": "Pod polštářem",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 9,
         "emoji": "🦇",
         "clue": "Další kartičku potřebuješ, jsem u knih, které čteš.",
         "answer": "Knihovna/Police s knihami",
-        "location": "study"
+        "location": "study",
+        "category": "indoor"
       },
       {
         "id": 10,
         "emoji": "🧙‍♀️",
         "clue": "Najdi další kartičku, pokud se odvážíš, jsem tam, kde máš spodní prádlo.",
         "answer": "Zásuvka komody",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 11,
         "emoji": "🧙‍♂️",
         "clue": "Pokud budeš sledovat tuto cestu, najdeš mě tam, kde se koupešš.",
         "answer": "Koupelna/Vana",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 12,
         "emoji": "🧹",
         "clue": "Toto je tvá poslední kartička, více už nebude. Pro svou finální cenu zkontroluj vchodové dveře.",
         "answer": "Vchodové dveře",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "outdoor"
       },
       {
         "id": 13,
         "emoji": "🕷️",
         "clue": "Neboj se tmy, skrývám se tam, kde oblečení dostává svou jiskru!",
         "answer": "Pračka/Prádelna",
-        "location": "laundry"
+        "location": "laundry",
+        "category": "indoor"
       },
       {
         "id": 14,
         "emoji": "🎭",
         "clue": "Když cítíš chlad, jsem tam, kde teplo přebírá kontrolu.",
         "answer": "Krb/Ohřívač",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 15,
         "emoji": "🔮",
         "clue": "Podívej se tam, kde čas tikne, tvá další kartička tam čeká celý den.",
         "answer": "Hodiny/Oblast hodín",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 16,
         "emoji": "🕯️",
         "clue": "Jsem studený a vysoký, udržuji tvé jídlo, aby se nepokazilo.",
         "answer": "Chladnička",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 17,
         "emoji": "🧛‍♂️",
         "clue": "Kde věšíš oblečení tak úhledně, zkontroluj místo, které se nedá porazit!",
         "answer": "Skříň/Šatník",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 18,
         "emoji": "🌙",
         "clue": "Když se každý den podíváš na sebe, odrážím se zpět všemi způsoby.",
         "answer": "Zrcadlo/Koupelnové zrcadlo",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 19,
         "emoji": "🎪",
         "clue": "Mám schody, ale nechodím, pomáhám ti dostat se vysoko bez řeči.",
         "answer": "Schody/Schodiště",
-        "location": "hallway"
+        "location": "hallway",
+        "category": "indoor"
       },
       {
         "id": 20,
         "emoji": "🦴",
         "clue": "Kde se nádobí myje a jiskří čistě, zkontroluj toto místo v noci i přes den.",
         "answer": "Myčka nádobí",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 21,
         "emoji": "🔮",
         "clue": "Jsem strážce tvého domova drahého, udržuji počasí příliš blízko.",
         "answer": "Okna/Parapet",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 22,
         "emoji": "🧟‍♀️",
         "clue": "Když je den hotový a potřebuješ odpočinek, podívej se tam, kde jsou polštáře nejlepší.",
         "answer": "Polštáře na gauči/Sedačka",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       }
-    ]
+    ],
+    "categories": {
+      "all": "Všechny Lokality",
+      "indoor": "🏠 Uvnitř",
+      "outdoor": "🌳 Venku",
+      "garden": "🌻 Zahrada"
+    },
+    "dualLanguageLabel": "Druhý Jazyk (Volitelné):",
+    "categoryLabel": "Filtrovat podle Lokality:"
   },
   "da": {
     "title": "🎃 Halloween Skattejagt Kort 🎃",
@@ -617,7 +710,8 @@
       "shuffle": "🔀 Bland Kort",
       "print": "🖨️ Print Kort",
       "reset": "🔄 Nulstil Jagt",
-      "setup": "📋 Opsætningsguide"
+      "setup": "📋 Opsætningsguide",
+      "dualLanguage": "🌍 To Sprog"
     },
     "setupGuide": {
       "title": "🎯 Sådan Opsættes Din Halloween Skattejagt",
@@ -664,156 +758,186 @@
         "emoji": "🥣",
         "clue": "Find din allerførste godbid, jeg er hvor du får mad at spise.",
         "answer": "Køkken/Skål",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 2,
         "emoji": "🍬",
         "clue": "Hvis du vil finde et slik tidligt, skal du kigge under dit aftensmad.",
         "answer": "Under spisebordet",
-        "location": "dining_room"
+        "location": "dining_room",
+        "category": "indoor"
       },
       {
         "id": 3,
         "emoji": "🎃",
         "clue": "Det er for tidligt at stoppe, sæt dig på noget du sidder på.",
         "answer": "Stol/Sofa",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 4,
         "emoji": "🧪",
         "clue": "Det er tid til at stoppe for en drink, nu er jeg tæt på vasken.",
         "answer": "Køkkenvask",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 5,
         "emoji": "🐸",
         "clue": "Du har stadig flere hints, det næste er ved dine sko.",
         "answer": "Skoreol/Skab",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "indoor"
       },
       {
         "id": 6,
         "emoji": "💀",
         "clue": "Jeg kan være svær at se, men jeg er tæt på dit fjernsyn.",
         "answer": "Ved fjernsynet",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 7,
         "emoji": "👻",
         "clue": "Ingen grund til at tjekke udenfor, jeg er lige ved din sengeside.",
         "answer": "Natbord",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 8,
         "emoji": "☠️",
         "clue": "Nu er jeg i din seng! Jeg er under hvor du lægger dit hoved.",
         "answer": "Under puden",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 9,
         "emoji": "🦇",
         "clue": "Det næste hint er hvad du har brug for, jeg er ved bøgerne du læser.",
         "answer": "Bogreol/Bibliotek",
-        "location": "study"
+        "location": "study",
+        "category": "indoor"
       },
       {
         "id": 10,
         "emoji": "🧙‍♀️",
         "clue": "Find det næste hint, hvis du tør, jeg er hvor du opbevarer dit undertøj.",
         "answer": "Kommode skuffe",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 11,
         "emoji": "🧙‍♂️",
         "clue": "Nu hvis du følger denne sti, finder du mig hvor du tager et bad.",
         "answer": "Badeværelse/Badekar",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 12,
         "emoji": "🧹",
         "clue": "Dette er dit sidste hint, der kommer ikke flere. For din endelige godbid, tjek hoveddøren.",
         "answer": "Hoveddør",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "outdoor"
       },
       {
         "id": 13,
         "emoji": "🕷️",
         "clue": "Vær ikke bange for mørket, jeg gemmer mig hvor tøj får deres gnist!",
         "answer": "Vaskemaskine/Vaskerum",
-        "location": "laundry"
+        "location": "laundry",
+        "category": "indoor"
       },
       {
         "id": 14,
         "emoji": "🎭",
         "clue": "Når du føler dig ret kold, er jeg hvor varme tager over.",
         "answer": "Pejs/Varmeapparat",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 15,
         "emoji": "🔮",
         "clue": "Kig hvor tiden tikker væk, dit næste hint venter der hele dagen.",
         "answer": "Ur/Ur område",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 16,
         "emoji": "🕯️",
         "clue": "Jeg er kold og ret høj, holder din mad fra at blive dårlig overhovedet.",
         "answer": "Køleskab",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 17,
         "emoji": "🧛‍♂️",
         "clue": "Hvor du hænger dit tøj så pænt, tjek stedet der ikke kan slås!",
         "answer": "Skab/Garderobe",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 18,
         "emoji": "🌙",
         "clue": "Når du ser på dig selv hver dag, reflekterer jeg tilbage på alle måder.",
         "answer": "Spejl/Badeværelses spejl",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 19,
         "emoji": "🎪",
         "clue": "Jeg har trin men jeg går ikke, jeg hjælper dig med at nå op højt uden at tale.",
         "answer": "Trappe/Trappeopgang",
-        "location": "hallway"
+        "location": "hallway",
+        "category": "indoor"
       },
       {
         "id": 20,
         "emoji": "🦴",
         "clue": "Hvor service bliver ren og gnistrer lyst, tjek dette sted både dag og nat.",
         "answer": "Opvaskemaskine",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 21,
         "emoji": "🔮",
         "clue": "Jeg er beskytteren af dit kære hjem, jeg holder vejret fra at komme for tæt på.",
         "answer": "Vinduer/Vindueskarme",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 22,
         "emoji": "🧟‍♀️",
         "clue": "Når dagen er forbi og du har brug for hvile, kig hvor puder er bedst.",
         "answer": "Sofapuder/Sofa",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       }
-    ]
+    ],
+    "categories": {
+      "all": "Alle Steder",
+      "indoor": "🏠 Indendørs",
+      "outdoor": "🌳 Udendørs",
+      "garden": "🌻 Have"
+    },
+    "dualLanguageLabel": "Andet Sprog (Valgfrit):",
+    "categoryLabel": "Filtrer efter Sted:"
   },
   "fo": {
     "title": "🎃 Halloween Skattaleitingarkort 🎃",
@@ -821,7 +945,8 @@
       "shuffle": "🔀 Blanda Kort",
       "print": "🖨️ Prenta Kort",
       "reset": "🔄 Endurnýggja Leiting",
-      "setup": "📋 Uppseting"
+      "setup": "📋 Uppseting",
+      "dualLanguage": "🌍 Tvey Mál"
     },
     "setupGuide": {
       "title": "🎯 Hvussu tú setur upp tína Halloween Skattaleiting",
@@ -868,155 +993,185 @@
         "emoji": "🥣",
         "clue": "Finn titt fyrsta gott, eg eri har tú fært mat at eta.",
         "answer": "Køkur/Skál",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 2,
         "emoji": "🍬",
         "clue": "Um tú vilt finna eitt sykurmál skjótt, skalt tú leita undir tínum kvøldmati.",
         "answer": "Undir matborðinum",
-        "location": "dining_room"
+        "location": "dining_room",
+        "category": "indoor"
       },
       {
         "id": 3,
         "emoji": "🎃",
         "clue": "Tað er ov skjótt at steðga, set teg á okkurt tú situr á.",
         "answer": "Stólur/Sófi",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 4,
         "emoji": "🧪",
         "clue": "Tað er tími at steðga fyri eina drekku, nú eri eg nær vaskunum.",
         "answer": "Køkurvaskur",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 5,
         "emoji": "🐸",
         "clue": "Tú hevur enn fleiri víst, næsta er við tínum skógvum.",
         "answer": "Skógarstativ/Skáp",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "indoor"
       },
       {
         "id": 6,
         "emoji": "💀",
         "clue": "Eg kann vera trupul at síggja, men eg eri nær tínum sjónvarpi.",
         "answer": "Við sjónvarpið",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 7,
         "emoji": "👻",
         "clue": "Eingin grund til at kanna uttan, eg eri beint við tína sársíðu.",
         "answer": "Náttborð",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 8,
         "emoji": "☠️",
         "clue": "Nú eri eg í tíni sári! Eg eri undir har tú leggur titt høvd.",
         "answer": "Undir koddanum",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 9,
         "emoji": "🦇",
         "clue": "Næsta víst er tað tú hevur tørv á, eg eri við bókunum tú lesur.",
         "answer": "Bókareyl/Bókasavn",
-        "location": "study"
+        "location": "study",
+        "category": "indoor"
       },
       {
         "id": 10,
         "emoji": "🧙‍♀️",
         "clue": "Finn næsta víst, um tú tørr, eg eri har tú goymir tín undirklæði.",
         "answer": "Kommodu skuffa",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 11,
         "emoji": "🧙‍♂️",
         "clue": "Nú um tú fylgir hesi leið, finnur tú meg har tú tekur bad.",
         "answer": "Badstofa/Badkar",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 12,
         "emoji": "🧹",
         "clue": "Hetta er titt síðsta víst, fleiri koma ikki. Fyri titt endamál, kanna húsadyrar.",
         "answer": "Húsadyrar",
-        "location": "entryway"
+        "location": "entryway",
+        "category": "outdoor"
       },
       {
         "id": 13,
         "emoji": "🕷️",
         "clue": "Ver ikki ræddin fyri myrkurið, eg duljist har klæði fáa sín neista!",
         "answer": "Vaskimaskina/Vaskistofa",
-        "location": "laundry"
+        "location": "laundry",
+        "category": "indoor"
       },
       {
         "id": 14,
         "emoji": "🎭",
         "clue": "Tá tú kennir teg kuld, eri eg har hitið tekur yvir.",
         "answer": "Eldstað/Hitari",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       },
       {
         "id": 15,
         "emoji": "🔮",
         "clue": "Líti har tíðin tikkar burtur, titt næsta víst bíðar har allan dag.",
         "answer": "Klokka/Klokku øki",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 16,
         "emoji": "🕯️",
         "clue": "Eg eri kaldur og háur, haldi tín mat frá at ringa alt saman.",
         "answer": "Køliskáp",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 17,
         "emoji": "🧛‍♂️",
         "clue": "Har tú hengur tín klæði so pent, kanna staðin sum ikki kann vinnast!",
         "answer": "Skáp/Klædiskáp",
-        "location": "bedroom"
+        "location": "bedroom",
+        "category": "indoor"
       },
       {
         "id": 18,
         "emoji": "🌙",
         "clue": "Tá tú lítur á teg sjálvan hvønn dag, spegli eg aftur á allar hættir.",
         "answer": "Spegil/Badstofu spegil",
-        "location": "bathroom"
+        "location": "bathroom",
+        "category": "indoor"
       },
       {
         "id": 19,
         "emoji": "🎪",
         "clue": "Eg havi stig men gangi ikki, eg hjálpi tær at koma upp hátt uttan at tosa.",
         "answer": "Stig/Stigagongd",
-        "location": "hallway"
+        "location": "hallway",
+        "category": "indoor"
       },
       {
         "id": 20,
         "emoji": "🦴",
         "clue": "Har diskar verða reinir og glimra bjørt, kanna hendan stað bæði dag og nátt.",
         "answer": "Diskvaskimaskina",
-        "location": "kitchen"
+        "location": "kitchen",
+        "category": "indoor"
       },
       {
         "id": 21,
         "emoji": "🔮",
         "clue": "Eg eri verndarin av tínum kæra heiminum, eg haldi veðrið frá at koma ov nær.",
         "answer": "Vindeygu/Vindeygubrú",
-        "location": "any_room"
+        "location": "any_room",
+        "category": "indoor"
       },
       {
         "id": 22,
         "emoji": "🧟‍♀️",
         "clue": "Tá dagin er liðin og tú hevur tørv á hvíld, líti har koddar eru bestir.",
         "answer": "Sófikoddar/Sófi",
-        "location": "living_room"
+        "location": "living_room",
+        "category": "indoor"
       }
-    ]
+    ],
+    "categories": {
+      "all": "Øll Støð",
+      "indoor": "🏠 Inni",
+      "outdoor": "🌳 Úti",
+      "garden": "🌻 Garður"
+    },
+    "dualLanguageLabel": "Annað Mál (Valkvætt):",
+    "categoryLabel": "Filtrera eftir Staði:"
   }
 }

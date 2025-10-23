@@ -6,6 +6,8 @@ class ScavengerHunt {
         this.currentOrder = [];
         this.revealedAnswers = new Set();
         this.currentLanguage = 'en';
+        this.secondLanguage = '';
+        this.currentCategory = 'all';
         this.translations = {};
         this.init();
     }
@@ -223,6 +225,8 @@ class ScavengerHunt {
         document.getElementById('setupGuideBtn').addEventListener('click', () => this.showSetupGuide());
         document.getElementById('closeGuideBtn').addEventListener('click', () => this.hideSetupGuide());
         document.getElementById('languageSelect').addEventListener('change', (e) => this.setLanguage(e.target.value));
+        document.getElementById('secondLanguageSelect').addEventListener('change', (e) => this.setSecondLanguage(e.target.value));
+        document.getElementById('categoryFilter').addEventListener('change', (e) => this.setCategory(e.target.value));
         
         // Close setup guide when clicking outside
         document.getElementById('setupGuide').addEventListener('click', (e) => {
@@ -249,15 +253,66 @@ class ScavengerHunt {
         document.getElementById('resetBtn').textContent = t.buttons.reset;
         document.getElementById('setupGuideBtn').textContent = t.buttons.setup;
         
+        // Update labels
+        document.getElementById('secondLanguageLabel').textContent = t.dualLanguageLabel || 'Second Language (Optional):';
+        document.getElementById('categoryLabel').textContent = t.categoryLabel || 'Filter by Location:';
+        
+        // Update category filter options
+        if (t.categories) {
+            const categoryFilter = document.getElementById('categoryFilter');
+            categoryFilter.options[0].textContent = t.categories.all;
+            categoryFilter.options[1].textContent = t.categories.indoor;
+            categoryFilter.options[2].textContent = t.categories.outdoor;
+            categoryFilter.options[3].textContent = t.categories.garden;
+        }
+        
         // Update language selector
         document.getElementById('languageSelect').value = this.currentLanguage;
+        
+        // Prevent selecting same language twice
+        this.updateSecondLanguageOptions();
         
         // Update clues and setup guide
         this.clues = t.clues || [];
         this.currentOrder = [...this.clues];
+        this.applyFilters();
         this.renderCards();
         this.generatePrintCards();
         this.updateSetupGuide(t);
+    }
+
+    setSecondLanguage(langCode) {
+        this.secondLanguage = langCode;
+        this.renderCards();
+        this.generatePrintCards();
+    }
+
+    setCategory(category) {
+        this.currentCategory = category;
+        this.applyFilters();
+        this.renderCards();
+        this.generatePrintCards();
+    }
+
+    updateSecondLanguageOptions() {
+        const secondSelect = document.getElementById('secondLanguageSelect');
+        const options = secondSelect.querySelectorAll('option');
+        
+        options.forEach(option => {
+            if (option.value && option.value === this.currentLanguage) {
+                option.disabled = true;
+            } else {
+                option.disabled = false;
+            }
+        });
+    }
+
+    applyFilters() {
+        if (this.currentCategory === 'all') {
+            this.currentOrder = [...this.clues];
+        } else {
+            this.currentOrder = this.clues.filter(clue => clue.category === this.currentCategory);
+        }
     }
 
     updateSetupGuide(t) {
@@ -311,13 +366,48 @@ class ScavengerHunt {
 
         const isRevealed = this.revealedAnswers.has(clue.id);
         const t = this.translations[this.currentLanguage];
-        const answerText = isRevealed ? clue.answer : (t?.cardAnswer || 'Click to reveal answer');
+        
+        // Get clue text for primary and secondary language
+        let clueHTML = '';
+        if (this.secondLanguage && this.translations[this.secondLanguage]) {
+            const secondClue = this.translations[this.secondLanguage].clues.find(c => c.id === clue.id);
+            if (secondClue) {
+                clueHTML = `
+                    <div class="card-clue card-clue-dual">
+                        <div class="card-clue-primary">${clue.clue}</div>
+                        <div class="card-clue-secondary">${secondClue.clue}</div>
+                    </div>
+                `;
+            } else {
+                clueHTML = `<div class="card-clue">${clue.clue}</div>`;
+            }
+        } else {
+            clueHTML = `<div class="card-clue">${clue.clue}</div>`;
+        }
+        
+        // Get answer text
+        let answerText = '';
+        if (isRevealed) {
+            if (this.secondLanguage && this.translations[this.secondLanguage]) {
+                const secondClue = this.translations[this.secondLanguage].clues.find(c => c.id === clue.id);
+                answerText = secondClue ? `${clue.answer} / ${secondClue.answer}` : clue.answer;
+            } else {
+                answerText = clue.answer;
+            }
+        } else {
+            answerText = t?.cardAnswer || 'Click to reveal answer';
+        }
+        
+        // Get category badge
+        const categoryClass = clue.category || 'indoor';
+        const categoryEmoji = categoryClass === 'outdoor' ? '🌳' : categoryClass === 'garden' ? '🌻' : '🏠';
         
         card.innerHTML = `
             <div class="card-content">
+                <div class="card-category ${categoryClass}">${categoryEmoji}</div>
                 <div class="card-number">${displayNumber}</div>
                 <div class="card-emoji">${clue.emoji}</div>
-                <div class="card-clue">${clue.clue}</div>
+                ${clueHTML}
                 <div class="card-answer ${isRevealed ? 'revealed' : ''}" onclick="scavengerHunt.toggleAnswer(${clue.id})">
                     ${answerText}
                 </div>
@@ -384,10 +474,32 @@ class ScavengerHunt {
         this.currentOrder.forEach((clue, index) => {
             const printCard = document.createElement('div');
             printCard.className = 'print-card';
+            
+            // Generate clue text for print
+            let clueText = '';
+            if (this.secondLanguage && this.translations[this.secondLanguage]) {
+                const secondClue = this.translations[this.secondLanguage].clues.find(c => c.id === clue.id);
+                if (secondClue) {
+                    clueText = `
+                        <div class="print-card-clue-primary">${clue.clue}</div>
+                        <div class="print-card-clue-secondary">${secondClue.clue}</div>
+                    `;
+                } else {
+                    clueText = `<div class="print-card-clue">${clue.clue}</div>`;
+                }
+            } else {
+                clueText = `<div class="print-card-clue">${clue.clue}</div>`;
+            }
+            
+            // Get category badge
+            const categoryClass = clue.category || 'indoor';
+            const categoryEmoji = categoryClass === 'outdoor' ? '🌳' : categoryClass === 'garden' ? '🌻' : '🏠';
+            
             printCard.innerHTML = `
+                <div class="print-card-category ${categoryClass}">${categoryEmoji}</div>
                 <div class="print-card-number">${index + 1}</div>
                 <div class="print-card-emoji">${clue.emoji}</div>
-                <div class="print-card-clue">${clue.clue}</div>
+                ${clueText}
             `;
             printCards.appendChild(printCard);
         });
