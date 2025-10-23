@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Scavenger Hunt Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="mainTitle">🎃 Halloween Scavenger Hunt Cards 🎃</h1>
+            <div class="language-selector">
+                <label for="languageSelect">🌍 Language:</label>
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="sk">Slovenčina</option>
+                    <option value="cs">Čeština</option>
+                    <option value="da">Dansk</option>
+                    <option value="fo">Føroyskt</option>
+                </select>
+            </div>
+            <div class="controls">
+                <button id="shuffleBtn">🔀 Shuffle Cards</button>
+                <button id="printBtn">🖨️ Print Cards</button>
+                <button id="resetBtn">🔄 Reset Hunt</button>
+                <button id="setupGuideBtn">📋 Setup Guide</button>
+            </div>
+        </header>
+        
+        <div class="setup-guide" id="setupGuide" style="display: none;">
+            <div class="setup-content">
+                <h2 id="setupTitle">🎯 How to Set Up Your Halloween Scavenger Hunt</h2>
+                <button class="close-guide" id="closeGuideBtn">✕</button>
+                
+                <div class="setup-steps" id="setupSteps">
+                    <!-- Steps will be populated by JavaScript -->
+                </div>
+                
+                <div class="setup-tips">
+                    <h3 id="tipsTitle">💡 Pro Tips</h3>
+                    <ul id="tipsList">
+                        <!-- Tips will be populated by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cards-grid" id="cardsGrid">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+        
+        <div class="print-section" id="printSection">
+            <!-- Print-optimized cards will be generated here -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

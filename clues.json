@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "emoji": "🥣",
+        "clue": "Find your very first treat, I'm where you get food to eat.",
+        "answer": "Kitchen/Bowl",
+        "location": "kitchen"
+    },
+    {
+        "id": 2,
+        "emoji": "🍬",
+        "clue": "If you want to find a candy, early. You must look under your dinner.",
+        "answer": "Under dinner table",
+        "location": "dining_room"
+    },
+    {
+        "id": 3,
+        "emoji": "🎃",
+        "clue": "It's too early to quit. Sit on something you sit.",
+        "answer": "Chair/Couch",
+        "location": "living_room"
+    },
+    {
+        "id": 4,
+        "emoji": "🧪",
+        "clue": "It's time to stop for a drink. Now I'm close to the sink.",
+        "answer": "Kitchen sink",
+        "location": "kitchen"
+    },
+    {
+        "id": 5,
+        "emoji": "🐸",
+        "clue": "You still have more clues. The next one is by your shoes.",
+        "answer": "Shoe rack/Closet",
+        "location": "entryway"
+    },
+    {
+        "id": 6,
+        "emoji": "💀",
+        "clue": "I might be hard to see. But I'm close to your TV.",
+        "answer": "Near television",
+        "location": "living_room"
+    },
+    {
+        "id": 7,
+        "emoji": "👻",
+        "clue": "No need to check outside, I'm right at your bedside.",
+        "answer": "Bedside table",
+        "location": "bedroom"
+    },
+    {
+        "id": 8,
+        "emoji": "☠️",
+        "clue": "Now I'm in your bed! I'm under where you put your head.",
+        "answer": "Under pillow",
+        "location": "bedroom"
+    },
+    {
+        "id": 9,
+        "emoji": "🦇",
+        "clue": "The next clue is what you need. I'm near the books you read.",
+        "answer": "Bookshelf/Library",
+        "location": "study"
+    },
+    {
+        "id": 10,
+        "emoji": "🧙‍♀️",
+        "clue": "Find the next clue, if you dare. I'm where you keep your underwear.",
+        "answer": "Dresser drawer",
+        "location": "bedroom"
+    },
+    {
+        "id": 11,
+        "emoji": "🧙‍♂️",
+        "clue": "Now if you follow this path, You'll find me where you take a bath.",
+        "answer": "Bathroom/Bathtub",
+        "location": "bathroom"
+    },
+    {
+        "id": 12,
+        "emoji": "🧹",
+        "clue": "This is your last clue. There won't be anymore. For your final treat, check the front door.",
+        "answer": "Front door",
+        "location": "entryway"
+    },
+    {
+        "id": 13,
+        "emoji": "🕷️",
+        "clue": "Don't be scared of the dark, I'm hiding where clothes get their spark!",
+        "answer": "Washing machine/Laundry room",
+        "location": "laundry"
+    },
+    {
+        "id": 14,
+        "emoji": "🎭",
+        "clue": "When you're feeling quite cold, I'm where warmth takes hold.",
+        "answer": "Fireplace/Heater",
+        "location": "living_room"
+    },
+    {
+        "id": 15,
+        "emoji": "🔮",
+        "clue": "Look where time ticks away, your next clue waits there all day.",
+        "answer": "Clock/Watch area",
+        "location": "any_room"
+    },
+    {
+        "id": 16,
+        "emoji": "🕯️",
+        "clue": "I'm cold and quite tall, keeping your food from going bad at all.",
+        "answer": "Refrigerator",
+        "location": "kitchen"
+    },
+    {
+        "id": 17,
+        "emoji": "🧛‍♂️",
+        "clue": "Where you hang your clothes so neat, check the place that can't be beat!",
+        "answer": "Closet/Wardrobe",
+        "location": "bedroom"
+    },
+    {
+        "id": 18,
+        "emoji": "🌙",
+        "clue": "When you look at yourself each day, I reflect back in every way.",
+        "answer": "Mirror/Bathroom mirror",
+        "location": "bathroom"
+    },
+    {
+        "id": 19,
+        "emoji": "🎪",
+        "clue": "I have steps but I don't walk, I help you reach up high without talk.",
+        "answer": "Stairs/Staircase",
+        "location": "hallway"
+    },
+    {
+        "id": 20,
+        "emoji": "🦴",
+        "clue": "Where dishes get clean and sparkly bright, check this spot both day and night.",
+        "answer": "Dishwasher",
+        "location": "kitchen"
+    },
+    {
+        "id": 21,
+        "emoji": "🔮",
+        "clue": "I'm the guardian of your home so dear, I keep the weather from getting too near.",
+        "answer": "Windows/Window sill",
+        "location": "any_room"
+    },
+    {
+        "id": 22,
+        "emoji": "🧟‍♀️",
+        "clue": "When the day is done and you need some rest, look where pillows are at their best.",
+        "answer": "Couch cushions/Sofa",
+        "location": "living_room"
+    }
+]
