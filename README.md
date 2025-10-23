@@ -7,6 +7,7 @@ A fun, interactive Halloween scavenger hunt card generator perfect for creating 
 - **Interactive Web Interface**: View and manage scavenger hunt cards in your browser
 - **Print-Ready Cards**: Professional print layout for physical cards
 - **Customizable Clues**: Easy-to-edit JSON format for adding your own riddles
+- **Two Card Modes**: Swap between quiz-style riddles and challenge-based task cards with built-in scoring
 - **Shuffling**: Randomize card order for different experiences
 - **Answer Reveal**: Click to show/hide answers during the hunt
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
@@ -15,8 +16,9 @@ A fun, interactive Halloween scavenger hunt card generator perfect for creating 
 
 ### Quick Start
 1. Open `index.html` in your web browser
-2. Use the controls to shuffle cards, print them, or reset the hunt
-3. Click on answer areas to reveal solutions
+2. Pick your preferred **card type** (Quiz riddles or Task challenges) and languages from the control panel
+3. Use the controls to shuffle cards, print them, or reset the hunt
+4. Click on answer areas to reveal solutions
 
 ### Printing Cards
 1. Click the "🖨️ Print Cards" button
@@ -31,7 +33,10 @@ halloween-scavenger-hunt/
 ├── index.html          # Main web interface
 ├── styles.css          # Styling and print layouts
 ├── script.js           # Interactive functionality
-├── clues.json          # Scavenger hunt data
+├── languages.json      # Localized clues, tasks, UI copy, and setup guide
+├── clues.json          # Legacy clue data (kept for backwards compatibility)
+├── docs/               # Project review and additional documentation
+├── test-functionality.md # Manual testing checklist
 └── README.md           # This file
 ```
 
@@ -58,6 +63,12 @@ Edit `clues.json` to add your own riddles:
 - **clue**: The riddle text participants need to solve
 - **answer**: Where the next clue is hidden
 - **location**: General area category (for organization)
+
+### Working with Card Types
+
+- **Quiz Cards (default)** display the clue text and let players click to reveal the answer. This is perfect for classic riddle-based hunts.
+- **Task Cards** swap riddles for activity prompts and show a point value instead of an answer. Use these for team challenges or competitive scoring.
+- Switching the **Card Type** selector automatically updates both the on-screen grid and the print layout. Points defined in `languages.json` appear on every task card, including bilingual versions.
 
 ### Styling
 
@@ -95,16 +106,21 @@ Modify `styles.css` to change:
    - **Continue in sequence**: Each card goes where the previous clue's answer points
    - **Work backwards** until you've hidden all cards except Card 1
 
-3. **Set Up the Final Prize**
+3. **Choose a Card Style for the Hunt**
+   - Decide whether the adventure uses **Quiz cards** (clues with answers) or **Task cards** (challenges with points)
+   - Mix and match: print a set of each card type or pair quiz cards with task cards for bonus rounds
+   - Note the point values on task cards to plan your scoring or rewards
+
+4. **Set Up the Final Prize**
    - Hide the ultimate treasure at the front door (or just outside)
    - Make it special - candy bag, small toy, or Halloween treat
 
-4. **Optional: Extend the Hunt**
+5. **Optional: Extend the Hunt**
    - Add extra custom cards before the final clue
    - Use our 22 cards to create a longer adventure
    - Mix and match difficulty levels
 
-5. **Start the Adventure**
+6. **Start the Adventure**
    - Hand Card 1 to your kids to begin
    - Watch the excitement unfold!
 
