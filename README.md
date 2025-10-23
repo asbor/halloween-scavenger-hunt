@@ -184,6 +184,71 @@ The included clues cover common household locations:
 - Safari: Full support
 - Internet Explorer: Basic support (no animations)
 
+## 🚀 Deployment Options
+
+### Option 1: Local File (Easiest)
+
+Simply open `index.html` in any web browser - no server required!
+
+### Option 2: Self-Hosted Server
+
+Host on your own server for easy access across devices on your network.
+
+#### Using Docker with Nginx
+
+```bash
+# Create a directory for the app
+mkdir -p /path/to/halloween-hunt
+
+# Copy files to the directory
+cp -r * /path/to/halloween-hunt/
+
+# Run nginx container
+docker run -d \
+  --name halloween-hunt \
+  -p 9090:80 \
+  -v /path/to/halloween-hunt:/usr/share/nginx/html:ro \
+  --restart unless-stopped \
+  nginx:alpine
+```
+
+Access at: `http://your-server-ip:9090`
+
+#### Using Python (Quick Test)
+
+```bash
+cd /path/to/halloween-scavenger-hunt
+python3 -m http.server 8080
+```
+
+Access at: `http://localhost:8080`
+
+#### Using Node.js
+
+```bash
+npx http-server -p 8080
+```
+
+### Option 3: Static Hosting Services
+
+Deploy for free on:
+
+- **GitHub Pages**: Push to GitHub and enable Pages in repository settings
+- **Netlify**: Drag and drop the folder to deploy
+- **Vercel**: Connect your GitHub repo for automatic deployments
+- **Cloudflare Pages**: Fast global CDN hosting
+
+### Updating Your Deployment
+
+After making local changes, simply copy the updated files to your server:
+
+```bash
+# Example for remote server
+scp -r * user@your-server:/path/to/halloween-hunt/
+```
+
+The app automatically picks up changes - no restart needed!
+
 ---
 
 **Happy Haunting!** 🎃👻🦇
