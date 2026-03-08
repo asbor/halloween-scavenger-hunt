@@ -232,6 +232,190 @@
         "answer": "Couch cushions/Sofa",
         "location": "living_room",
         "category": "indoor"
+      },
+      {
+        "id": 23,
+        "emoji": "🌲",
+        "clue": "I reach up high toward the sky, my branches sway as wind goes by.",
+        "answer": "Tree/Big tree in yard",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 24,
+        "emoji": "🌸",
+        "clue": "Where flowers bloom and colors grow, in this special place they show.",
+        "answer": "Flower bed/Garden",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 25,
+        "emoji": "🌿",
+        "clue": "I help the garden get a drink, without me plants would surely shrink.",
+        "answer": "Garden hose/Sprinkler",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 26,
+        "emoji": "🌱",
+        "clue": "Where vegetables like to hide, check the patch right outside.",
+        "answer": "Vegetable garden/Garden bed",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 27,
+        "emoji": "🍂",
+        "clue": "When autumn leaves fall to the ground, I'm where they can be found.",
+        "answer": "Under tree/Leaf pile",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 28,
+        "emoji": "⛰️",
+        "clue": "I'm hard and gray, I mark the way, sitting still both night and day.",
+        "answer": "Garden stones/Rock border",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 29,
+        "emoji": "🌳",
+        "clue": "I give you shade on sunny days, and home to birds in many ways.",
+        "answer": "Shade tree/Large tree",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 30,
+        "emoji": "🏞️",
+        "clue": "Where grass grows green and children play, your next clue waits here today.",
+        "answer": "Lawn/Grassy area",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 31,
+        "emoji": "🌺",
+        "clue": "Buzzing friends come here to dine, on nectar sweet like summer wine.",
+        "answer": "Flower garden/Blooming flowers",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 32,
+        "emoji": "🌊",
+        "clue": "I splash and spray to keep things clean, the freshest water you've ever seen.",
+        "answer": "Outdoor faucet/Water spigot",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 33,
+        "emoji": "🗑️",
+        "clue": "I keep the yard both clean and neat, storing trash from the street.",
+        "answer": "Outdoor trash can/Bin",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 34,
+        "emoji": "🌵",
+        "clue": "I don't need much water to survive, in the garden I'm very much alive.",
+        "answer": "Cactus/Succulent garden",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 35,
+        "emoji": "🦋",
+        "clue": "Where pretty wings flutter about, this is what gardens are all about.",
+        "answer": "Butterfly garden/Flower area",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 36,
+        "emoji": "🌻",
+        "clue": "I turn my face to follow the sun, in the garden I'm second to none.",
+        "answer": "Sunflower/Tall flowers",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 37,
+        "emoji": "🍃",
+        "clue": "When the breeze blows through the yard, I dance and sway, it's not that hard.",
+        "answer": "Bushes/Shrubs",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 38,
+        "emoji": "🏡",
+        "clue": "I'm the entrance to your space, where visitors first see your face.",
+        "answer": "Front gate/Garden entrance",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 39,
+        "emoji": "🌙",
+        "clue": "When darkness falls I light the way, keeping danger at bay.",
+        "answer": "Outdoor light/Garden light",
+        "location": "outdoor",
+        "category": "outdoor"
+      },
+      {
+        "id": 40,
+        "emoji": "🦆",
+        "clue": "If you have a pond so blue, I might be floating there for you.",
+        "answer": "Garden pond/Water feature",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 41,
+        "emoji": "🌾",
+        "clue": "I sway in fields of golden grain, dancing in the sun and rain.",
+        "answer": "Tall grass/Ornamental grass",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 42,
+        "emoji": "🐝",
+        "clue": "I buzz around from bloom to bloom, helping flowers to resume.",
+        "answer": "Bee house/Pollinator area",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 43,
+        "emoji": "🌈",
+        "clue": "After the rain when sun breaks through, I paint the sky in every hue.",
+        "answer": "Garden arch/Colorful area",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 44,
+        "emoji": "🦔",
+        "clue": "Small and spiky, I protect myself, hiding in the garden like an elf.",
+        "answer": "Thorny plants/Rose bush",
+        "location": "garden",
+        "category": "garden"
+      },
+      {
+        "id": 45,
+        "emoji": "🌫️",
+        "clue": "In the early morning light, I cover grass from overnight.",
+        "answer": "Dewy grass/Morning lawn",
+        "location": "outdoor",
+        "category": "outdoor"
       }
     ],
     "tasks": [
@@ -444,6 +628,76 @@
         "task": "PARENT TASK: Take silly spooky photos together in costumes",
         "points": 10,
         "category": "indoor"
+      },
+      {
+        "id": 31,
+        "emoji": "🌱",
+        "task": "Plant a seed or small plant in the garden",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 32,
+        "emoji": "🦆",
+        "task": "Walk like a duck around the garden quacking loudly",
+        "points": 10,
+        "category": "garden"
+      },
+      {
+        "id": 33,
+        "emoji": "🌳",
+        "task": "Climb safely up a tree (with adult supervision)",
+        "points": 20,
+        "category": "outdoor"
+      },
+      {
+        "id": 34,
+        "emoji": "🦔",
+        "task": "Search for small creatures in the garden (observe, don't touch)",
+        "points": 15,
+        "category": "garden"
+      },
+      {
+        "id": 35,
+        "emoji": "🌊",
+        "task": "Water the plants with a garden hose for 5 minutes",
+        "points": 10,
+        "category": "garden"
+      },
+      {
+        "id": 36,
+        "emoji": "🏃‍♂️",
+        "task": "Run 3 laps around the yard or garden",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 37,
+        "emoji": "🌈",
+        "task": "Find objects in nature that match rainbow colors (red, orange, yellow, green, blue, purple)",
+        "points": 20,
+        "category": "outdoor"
+      },
+      {
+        "id": 38,
+        "emoji": "🦋",
+        "task": "Do butterfly movements - spread your arms and flutter around the garden",
+        "points": 10,
+        "category": "garden"
+      },
+      {
+        "id": 39,
+        "emoji": "🌙",
+        "task": "OUTDOOR NIGHT TASK: Stargaze for 5 minutes and name 3 things you see",
+        "points": 15,
+        "category": "outdoor"
+      },
+      {
+        "id": 40,
+        "emoji": "🍃",
+        "task": "Make leaf rubbings using paper and crayons",
+        "points": 15,
+        "category": "outdoor"
       }
     ],
     "cardTypes": {
